@@ -1,0 +1,14 @@
+{
+  "_comment": "Tester-side flashing policy. The robust flasher uses all of it; the baseline flasher uses none of it except the boot wait.",
+  "keepalive_ms": 2000,
+  "request_retries": 3,
+  "busy_retry_ms": 200,
+  "boot_poll_ms": 100,
+  "boot_timeout_ms": 5000,
+  "reconnect_timeout_ms": 15000,
+  "voltage_wait_ms": 10000,
+  "voltage_poll_ms": 500,
+  "max_attempts": 3,
+  "retry_backoff_ms": 1100,
+  "_retry_backoff": "Longer than N_Bs (1000 ms), so the gateway's ISO-TP sender has given up on a broken message before the same block is sent again."
+}

@@ -1,0 +1,160 @@
+[
+ {
+  "ecu": "ZCU_FRONT",
+  "bus": "zone-front",
+  "fd": true,
+  "messages": 127,
+  "can_frames": 2889,
+  "files": {
+   "zone-front": "reports/captures/flash-ZCU_FRONT.zone-front.pcap",
+   "zone-rear": "reports/captures/flash-ZCU_FRONT.zone-rear.pcap",
+   "powertrain": "reports/captures/flash-ZCU_FRONT.powertrain.pcap",
+   "doip": "reports/captures/flash-ZCU_FRONT.doip.pcap"
+  },
+  "checks": [
+   {
+    "decoder": "doip/scapy",
+    "expected": 127,
+    "decoded": 127,
+    "equal": 127,
+    "agrees": true,
+    "first_difference": null
+   },
+   {
+    "decoder": "isotp/scapy",
+    "expected": 127,
+    "decoded": 127,
+    "equal": 127,
+    "agrees": true,
+    "first_difference": null,
+    "fd_escape_frames_checked_at_frame_level": 9,
+    "raw_equal_before_frame_check": 118
+   },
+   {
+    "decoder": "isotp/rust",
+    "expected": 127,
+    "decoded": 127,
+    "equal": 127,
+    "agrees": true,
+    "first_difference": null,
+    "decoder_errors": 0
+   }
+  ]
+ },
+ {
+  "ecu": "ZCU_REAR",
+  "bus": "zone-rear",
+  "fd": true,
+  "messages": 111,
+  "can_frames": 2323,
+  "files": "not kept",
+  "checks": [
+   {
+    "decoder": "doip/scapy",
+    "expected": 111,
+    "decoded": 111,
+    "equal": 111,
+    "agrees": true,
+    "first_difference": null
+   },
+   {
+    "decoder": "isotp/scapy",
+    "expected": 111,
+    "decoded": 111,
+    "equal": 111,
+    "agrees": true,
+    "first_difference": null,
+    "fd_escape_frames_checked_at_frame_level": 9,
+    "raw_equal_before_frame_check": 102
+   },
+   {
+    "decoder": "isotp/rust",
+    "expected": 111,
+    "decoded": 111,
+    "equal": 111,
+    "agrees": true,
+    "first_difference": null,
+    "decoder_errors": 0
+   }
+  ]
+ },
+ {
+  "ecu": "BMS",
+  "bus": "powertrain",
+  "fd": false,
+  "messages": 141,
+  "can_frames": 7681,
+  "files": {
+   "zone-front": "reports/captures/flash-BMS.zone-front.pcap",
+   "zone-rear": "reports/captures/flash-BMS.zone-rear.pcap",
+   "powertrain": "reports/captures/flash-BMS.powertrain.pcap",
+   "doip": "reports/captures/flash-BMS.doip.pcap"
+  },
+  "checks": [
+   {
+    "decoder": "doip/scapy",
+    "expected": 141,
+    "decoded": 141,
+    "equal": 141,
+    "agrees": true,
+    "first_difference": null
+   },
+   {
+    "decoder": "isotp/scapy",
+    "expected": 141,
+    "decoded": 141,
+    "equal": 141,
+    "agrees": true,
+    "first_difference": null,
+    "fd_escape_frames_checked_at_frame_level": 0,
+    "raw_equal_before_frame_check": 141
+   },
+   {
+    "decoder": "isotp/rust",
+    "expected": 141,
+    "decoded": 141,
+    "equal": 141,
+    "agrees": true,
+    "first_difference": null,
+    "decoder_errors": 0
+   }
+  ]
+ },
+ {
+  "ecu": "THERMAL",
+  "bus": "powertrain",
+  "fd": false,
+  "messages": 108,
+  "can_frames": 5152,
+  "files": "not kept",
+  "checks": [
+   {
+    "decoder": "doip/scapy",
+    "expected": 108,
+    "decoded": 108,
+    "equal": 108,
+    "agrees": true,
+    "first_difference": null
+   },
+   {
+    "decoder": "isotp/scapy",
+    "expected": 108,
+    "decoded": 108,
+    "equal": 108,
+    "agrees": true,
+    "first_difference": null,
+    "fd_escape_frames_checked_at_frame_level": 0,
+    "raw_equal_before_frame_check": 108
+   },
+   {
+    "decoder": "isotp/rust",
+    "expected": 108,
+    "decoded": 108,
+    "equal": 108,
+    "agrees": true,
+    "first_difference": null,
+    "decoder_errors": 0
+   }
+  ]
+ }
+]

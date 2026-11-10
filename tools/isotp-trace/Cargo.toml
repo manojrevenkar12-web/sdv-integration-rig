@@ -1,0 +1,11 @@
+[package]
+name = "isotp-trace"
+version = "0.1.0"
+edition = "2021"
+description = "Reassemble ISO 15765-2 messages (classic CAN and CAN FD) from a SocketCAN pcap, with no dependencies"
+license = "MIT"
+
+[dependencies]
+
+[profile.release]
+opt-level = 2

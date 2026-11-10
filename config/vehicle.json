@@ -1,0 +1,122 @@
+{
+  "_comment": "Synthetic reference vehicle. Addresses, part numbers and security secrets are invented test values for the rig and belong to no real car.",
+  "vin": "1RVSDV0TEST000001",
+  "tester": {
+    "logical_address": "0x0E80"
+  },
+  "functional_address": "0xE400",
+  "functional_can_id": "0x7DF",
+  "gateway": {
+    "name": "CGW",
+    "logical_address": "0x1010",
+    "eid": "02:00:5e:00:10:10",
+    "gid": "02:00:5e:00:00:01",
+    "hardware": "SIM-CGW-HW02",
+    "part_number": "SIM-CGW-0001",
+    "serial": "CGW000117",
+    "software": "5.0.3",
+    "heartbeat_id": "0x080"
+  },
+  "buses": {
+    "zone-front": {
+      "kind": "fd",
+      "nominal_bps": 500000,
+      "data_bps": 2000000
+    },
+    "zone-rear": {
+      "kind": "fd",
+      "nominal_bps": 500000,
+      "data_bps": 2000000
+    },
+    "powertrain": {
+      "kind": "classic",
+      "nominal_bps": 500000
+    }
+  },
+  "ecus": [
+    {
+      "name": "ZCU_FRONT",
+      "logical_address": "0x1A01",
+      "bus": "zone-front",
+      "request_id": "0x7A1",
+      "response_id": "0x7A9",
+      "status_id": "0x101",
+      "hardware": "SIM-ZCUF-HW03",
+      "part_number": "SIM-ZCUF-0003",
+      "serial": "ZF000731",
+      "software": "3.1.0",
+      "image_kib": 160,
+      "max_block_length": 4002,
+      "erase_us_per_kib": 1800,
+      "write_us_per_kib": 900,
+      "verify_us_per_kib": 300,
+      "boot_ms": 350,
+      "monitors": [],
+      "security_secret": "0058d240bfb4b22e948081d81cadde85"
+    },
+    {
+      "name": "ZCU_REAR",
+      "logical_address": "0x1A02",
+      "bus": "zone-rear",
+      "request_id": "0x7A2",
+      "response_id": "0x7AA",
+      "status_id": "0x102",
+      "hardware": "SIM-ZCUR-HW03",
+      "part_number": "SIM-ZCUR-0003",
+      "serial": "ZR000412",
+      "software": "3.1.0",
+      "image_kib": 128,
+      "max_block_length": 4002,
+      "erase_us_per_kib": 1800,
+      "write_us_per_kib": 900,
+      "verify_us_per_kib": 300,
+      "boot_ms": 350,
+      "monitors": [],
+      "security_secret": "0ef5eae4a7e9cc142ade24c8eda8dc42"
+    },
+    {
+      "name": "BMS",
+      "logical_address": "0x1B01",
+      "bus": "powertrain",
+      "request_id": "0x7E4",
+      "response_id": "0x7EC",
+      "status_id": "0x111",
+      "hardware": "SIM-BMS-HW07",
+      "part_number": "SIM-BMS-0007",
+      "serial": "BM002210",
+      "software": "1.8.2",
+      "image_kib": 48,
+      "max_block_length": 1026,
+      "erase_us_per_kib": 2500,
+      "write_us_per_kib": 1200,
+      "verify_us_per_kib": 400,
+      "boot_ms": 250,
+      "monitors": [
+        "THERMAL"
+      ],
+      "security_secret": "ce0e709b6c74d3b6bdd1f3e88d7d356b"
+    },
+    {
+      "name": "THERMAL",
+      "logical_address": "0x1B02",
+      "bus": "powertrain",
+      "request_id": "0x7E5",
+      "response_id": "0x7ED",
+      "status_id": "0x112",
+      "hardware": "SIM-THM-HW02",
+      "part_number": "SIM-THM-0002",
+      "serial": "TH000958",
+      "software": "2.0.4",
+      "image_kib": 32,
+      "max_block_length": 1026,
+      "erase_us_per_kib": 2500,
+      "write_us_per_kib": 1200,
+      "verify_us_per_kib": 400,
+      "boot_ms": 250,
+      "monitors": [
+        "BMS"
+      ],
+      "security_secret": "49b0308dd1f95da2809ee1125924f5c3"
+    }
+  ]
+}

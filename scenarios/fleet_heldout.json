@@ -1,0 +1,727 @@
+[
+ {
+  "id": "fleet-heldout-cold_hw-01",
+  "kind": "cold_hw",
+  "seed": 746787752,
+  "releases": [
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 8,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW07",
+     "dtc": "P1A40-00",
+     "rate": 0.044
+    }
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 18,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 13,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-cold_hw-02",
+  "kind": "cold_hw",
+  "seed": 547747668,
+  "releases": [
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 18,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 17,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 9,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW04",
+     "dtc": "B1A23-16",
+     "rate": 0.024
+    }
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-cold_hw-03",
+  "kind": "cold_hw",
+  "seed": 819071116,
+  "releases": [
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 10,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 19,
+    "defect": null
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 13,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW07",
+     "dtc": "P1A40-00",
+     "rate": 0.044
+    }
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-cold_hw-04",
+  "kind": "cold_hw",
+  "seed": 132807631,
+  "releases": [
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 19,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 20,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 13,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW03",
+     "dtc": "B1A23-16",
+     "rate": 0.072
+    }
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-cold_hw-05",
+  "kind": "cold_hw",
+  "seed": 380774343,
+  "releases": [
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 16,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW04",
+     "dtc": "B1A23-16",
+     "rate": 0.054
+    }
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 9,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 12,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-always-01",
+  "kind": "always",
+  "seed": 899323546,
+  "releases": [
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 9,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "B1A23-16",
+     "rate": 0.0089
+    }
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 20,
+    "defect": null
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 18,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-always-02",
+  "kind": "always",
+  "seed": 193466835,
+  "releases": [
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 11,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "P1A40-00",
+     "rate": 0.0064
+    }
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 8,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 9,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-always-03",
+  "kind": "always",
+  "seed": 278424881,
+  "releases": [
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 17,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "P1A40-00",
+     "rate": 0.0076
+    }
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 10,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 13,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-always-04",
+  "kind": "always",
+  "seed": 824473388,
+  "releases": [
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 18,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "P1A40-00",
+     "rate": 0.0063
+    }
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 13,
+    "defect": null
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 16,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-always-05",
+  "kind": "always",
+  "seed": 577562991,
+  "releases": [
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 14,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "B1B10-11",
+     "rate": 0.0112
+    }
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 15,
+    "defect": null
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 10,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-healthy_cold_snap-01",
+  "kind": "healthy_cold_snap",
+  "seed": 776204043,
+  "releases": [
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 15,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 19,
+    "defect": null
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 20,
+    "defect": null
+   }
+  ],
+  "forced_snaps": [
+   {
+    "region": "nordic",
+    "start": 15,
+    "length": 8,
+    "drop": 15
+   },
+   {
+    "region": "nordic",
+    "start": 19,
+    "length": 10,
+    "drop": 14
+   },
+   {
+    "region": "nordic",
+    "start": 20,
+    "length": 7,
+    "drop": 11
+   }
+  ]
+ },
+ {
+  "id": "fleet-heldout-healthy_cold_snap-02",
+  "kind": "healthy_cold_snap",
+  "seed": 919713717,
+  "releases": [
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 12,
+    "defect": null
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 15,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 14,
+    "defect": null
+   }
+  ],
+  "forced_snaps": [
+   {
+    "region": "nordic",
+    "start": 12,
+    "length": 7,
+    "drop": 15
+   },
+   {
+    "region": "nordic",
+    "start": 15,
+    "length": 8,
+    "drop": 13
+   },
+   {
+    "region": "nordic",
+    "start": 14,
+    "length": 7,
+    "drop": 12
+   }
+  ]
+ },
+ {
+  "id": "fleet-heldout-healthy_cold_snap-03",
+  "kind": "healthy_cold_snap",
+  "seed": 297934001,
+  "releases": [
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 17,
+    "defect": null
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 16,
+    "defect": null
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 14,
+    "defect": null
+   }
+  ],
+  "forced_snaps": [
+   {
+    "region": "nordic",
+    "start": 17,
+    "length": 10,
+    "drop": 16
+   },
+   {
+    "region": "nordic",
+    "start": 16,
+    "length": 6,
+    "drop": 15
+   },
+   {
+    "region": "nordic",
+    "start": 14,
+    "length": 7,
+    "drop": 13
+   }
+  ]
+ },
+ {
+  "id": "fleet-heldout-healthy_cold_snap-04",
+  "kind": "healthy_cold_snap",
+  "seed": 836095822,
+  "releases": [
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 14,
+    "defect": null
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 17,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 12,
+    "defect": null
+   }
+  ],
+  "forced_snaps": [
+   {
+    "region": "nordic",
+    "start": 14,
+    "length": 7,
+    "drop": 12
+   },
+   {
+    "region": "nordic",
+    "start": 17,
+    "length": 8,
+    "drop": 16
+   },
+   {
+    "region": "nordic",
+    "start": 12,
+    "length": 10,
+    "drop": 11
+   }
+  ]
+ },
+ {
+  "id": "fleet-heldout-healthy_cold_snap-05",
+  "kind": "healthy_cold_snap",
+  "seed": 1001138515,
+  "releases": [
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 12,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 11,
+    "defect": null
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 9,
+    "defect": null
+   }
+  ],
+  "forced_snaps": [
+   {
+    "region": "nordic",
+    "start": 12,
+    "length": 6,
+    "drop": 11
+   },
+   {
+    "region": "nordic",
+    "start": 11,
+    "length": 8,
+    "drop": 13
+   },
+   {
+    "region": "nordic",
+    "start": 9,
+    "length": 6,
+    "drop": 10
+   }
+  ]
+ },
+ {
+  "id": "fleet-heldout-mixed-01",
+  "kind": "mixed",
+  "seed": 582690235,
+  "releases": [
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 8,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "P1A40-00",
+     "rate": 0.0087
+    }
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 14,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW04",
+     "dtc": "B1A23-16",
+     "rate": 0.054
+    }
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 18,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-mixed-02",
+  "kind": "mixed",
+  "seed": 671664883,
+  "releases": [
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 16,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "B1B10-11",
+     "rate": 0.011
+    }
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 14,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW07",
+     "dtc": "P1A40-00",
+     "rate": 0.075
+    }
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 12,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-mixed-03",
+  "kind": "mixed",
+  "seed": 816615440,
+  "releases": [
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 17,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "P1C02-00",
+     "rate": 0.012
+    }
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 10,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW08",
+     "dtc": "P1A40-00",
+     "rate": 0.071
+    }
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 18,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-mixed-04",
+  "kind": "mixed",
+  "seed": 612464630,
+  "releases": [
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 10,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "P1C02-00",
+     "rate": 0.0075
+    }
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 8,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW04",
+     "dtc": "B1A23-16",
+     "rate": 0.032
+    }
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 17,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-heldout-mixed-05",
+  "kind": "mixed",
+  "seed": 1018642760,
+  "releases": [
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 11,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "P1A40-00",
+     "rate": 0.0046
+    }
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 19,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": null,
+     "dtc": "B1B10-11",
+     "rate": 0.026
+    }
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 11,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ }
+]

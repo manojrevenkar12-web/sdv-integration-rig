@@ -1,0 +1,3043 @@
+[
+ {
+  "id": "flash-dev-clean-01",
+  "family": "clean",
+  "seed": 1063938749,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "3.4.3",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-clean-02",
+  "family": "clean",
+  "seed": 201561926,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.6.6",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-clean-03",
+  "family": "clean",
+  "seed": 4522707,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.6.19",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-clean-04",
+  "family": "clean",
+  "seed": 219531151,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "6.3.18",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-clean-05",
+  "family": "clean",
+  "seed": 19767455,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "2.0.0",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-clean-06",
+  "family": "clean",
+  "seed": 476079230,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.0.16",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-clean-07",
+  "family": "clean",
+  "seed": 742385984,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.8.7",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-clean-08",
+  "family": "clean",
+  "seed": 893739613,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "9.4.0",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-clean-09",
+  "family": "clean",
+  "seed": 714457467,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.4.3",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-clean-10",
+  "family": "clean",
+  "seed": 1072371851,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "5.4.9",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-interference-01",
+  "family": "interference",
+  "seed": 868202078,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "2.7.7",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.055
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-interference-02",
+  "family": "interference",
+  "seed": 231780618,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.1.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.044
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-interference-03",
+  "family": "interference",
+  "seed": 1007857332,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.7.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.028
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-interference-04",
+  "family": "interference",
+  "seed": 487344227,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "4.2.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.063
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-interference-05",
+  "family": "interference",
+  "seed": 758650493,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.8.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.073
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-interference-06",
+  "family": "interference",
+  "seed": 441276232,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.8.4",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.076
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-interference-07",
+  "family": "interference",
+  "seed": 429151876,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.9.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.043
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-interference-08",
+  "family": "interference",
+  "seed": 3403220,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.6.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.046
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-interference-09",
+  "family": "interference",
+  "seed": 493073046,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.9.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.046
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-interference-10",
+  "family": "interference",
+  "seed": 69705451,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "3.8.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.076
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-bus_off_burst-01",
+  "family": "bus_off_burst",
+  "seed": 31267309,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.0.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 73,
+    "at": {
+     "step": "transfer",
+     "block": 8
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-bus_off_burst-02",
+  "family": "bus_off_burst",
+  "seed": 359639757,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.4.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 140,
+    "at": {
+     "step": "transfer",
+     "block": 6
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 173,
+    "at": {
+     "step": "transfer",
+     "block": 9
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-bus_off_burst-03",
+  "family": "bus_off_burst",
+  "seed": 1017415509,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.5.15",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 84,
+    "at": {
+     "step": "transfer",
+     "block": 25
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-bus_off_burst-04",
+  "family": "bus_off_burst",
+  "seed": 233563961,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.3.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 135,
+    "at": {
+     "step": "transfer",
+     "block": 14
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 160,
+    "at": {
+     "step": "transfer",
+     "block": 28
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 214,
+    "at": {
+     "step": "transfer",
+     "block": 2
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-bus_off_burst-05",
+  "family": "bus_off_burst",
+  "seed": 75862109,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "2.6.4",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 119,
+    "at": {
+     "step": "transfer",
+     "block": 23
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-bus_off_burst-06",
+  "family": "bus_off_burst",
+  "seed": 479309280,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "5.8.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 12,
+    "at": {
+     "step": "transfer",
+     "block": 13
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 177,
+    "at": {
+     "step": "transfer",
+     "block": 19
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 210,
+    "at": {
+     "step": "transfer",
+     "block": 11
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-bus_off_burst-07",
+  "family": "bus_off_burst",
+  "seed": 455549343,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "2.4.4",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 83,
+    "at": {
+     "step": "transfer",
+     "block": 3
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-bus_off_burst-08",
+  "family": "bus_off_burst",
+  "seed": 893723127,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.4.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 38,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 148,
+    "at": {
+     "step": "transfer",
+     "block": 3
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-bus_off_burst-09",
+  "family": "bus_off_burst",
+  "seed": 80366087,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "9.2.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 93,
+    "at": {
+     "step": "transfer",
+     "block": 4
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-bus_off_burst-10",
+  "family": "bus_off_burst",
+  "seed": 1057315190,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.9.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 104,
+    "at": {
+     "step": "transfer",
+     "block": 10
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 134,
+    "at": {
+     "step": "transfer",
+     "block": 16
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 9,
+    "at": {
+     "step": "transfer",
+     "block": 11
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_transfer-01",
+  "family": "power_cut_transfer",
+  "seed": 431328546,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "6.0.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1542,
+    "at": {
+     "step": "transfer",
+     "block": 28
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_transfer-02",
+  "family": "power_cut_transfer",
+  "seed": 572380514,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.6.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 594,
+    "at": {
+     "step": "transfer",
+     "block": 22
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_transfer-03",
+  "family": "power_cut_transfer",
+  "seed": 503886500,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.8.15",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3171,
+    "at": {
+     "step": "transfer",
+     "block": 3
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_transfer-04",
+  "family": "power_cut_transfer",
+  "seed": 357668869,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.2.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1072,
+    "at": {
+     "step": "transfer",
+     "block": 35
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_transfer-05",
+  "family": "power_cut_transfer",
+  "seed": 548233728,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.9.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1587,
+    "at": {
+     "step": "transfer",
+     "block": 24
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_transfer-06",
+  "family": "power_cut_transfer",
+  "seed": 1049674601,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "3.4.7",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2575,
+    "at": {
+     "step": "transfer",
+     "block": 9
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_transfer-07",
+  "family": "power_cut_transfer",
+  "seed": 157181669,
+  "ecu": "BMS",
+  "image": {
+   "version": "7.0.13",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3747,
+    "at": {
+     "step": "transfer",
+     "block": 25
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_transfer-08",
+  "family": "power_cut_transfer",
+  "seed": 811833930,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.5.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2537,
+    "at": {
+     "step": "transfer",
+     "block": 3
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_transfer-09",
+  "family": "power_cut_transfer",
+  "seed": 634694393,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "3.4.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2388,
+    "at": {
+     "step": "transfer",
+     "block": 19
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_transfer-10",
+  "family": "power_cut_transfer",
+  "seed": 98251092,
+  "ecu": "BMS",
+  "image": {
+   "version": "9.4.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 250,
+    "at": {
+     "step": "transfer",
+     "block": 19
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_erase-01",
+  "family": "power_cut_erase",
+  "seed": 85949888,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.6.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1181,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_erase-02",
+  "family": "power_cut_erase",
+  "seed": 359453189,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "4.1.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1188,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_erase-03",
+  "family": "power_cut_erase",
+  "seed": 631410833,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "3.6.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1237,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_erase-04",
+  "family": "power_cut_erase",
+  "seed": 681646403,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.1.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 311,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_erase-05",
+  "family": "power_cut_erase",
+  "seed": 966033786,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.9.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1483,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_erase-06",
+  "family": "power_cut_erase",
+  "seed": 978947581,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.1.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1224,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_erase-07",
+  "family": "power_cut_erase",
+  "seed": 393467851,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "9.5.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1051,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_erase-08",
+  "family": "power_cut_erase",
+  "seed": 174738087,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.3.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 566,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_erase-09",
+  "family": "power_cut_erase",
+  "seed": 727747380,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.9.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1131,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_erase-10",
+  "family": "power_cut_erase",
+  "seed": 401177545,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "6.0.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3447,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_exit-01",
+  "family": "power_cut_exit",
+  "seed": 197662829,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.5.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1101,
+    "at": {
+     "step": "transfer-exit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_exit-02",
+  "family": "power_cut_exit",
+  "seed": 152291735,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.1.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 507,
+    "at": {
+     "step": "transfer-exit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_exit-03",
+  "family": "power_cut_exit",
+  "seed": 1006814200,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.5.15",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 613,
+    "at": {
+     "step": "activate"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_exit-04",
+  "family": "power_cut_exit",
+  "seed": 385615964,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "3.8.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 779,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_exit-05",
+  "family": "power_cut_exit",
+  "seed": 630263890,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "3.8.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3860,
+    "at": {
+     "step": "transfer-exit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_exit-06",
+  "family": "power_cut_exit",
+  "seed": 441166494,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "2.5.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1424,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_exit-07",
+  "family": "power_cut_exit",
+  "seed": 138328426,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "2.3.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2029,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_exit-08",
+  "family": "power_cut_exit",
+  "seed": 23335693,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.8.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3625,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_exit-09",
+  "family": "power_cut_exit",
+  "seed": 894821820,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "6.7.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 277,
+    "at": {
+     "step": "transfer-exit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_exit-10",
+  "family": "power_cut_exit",
+  "seed": 297417456,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "4.9.4",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3595,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_after_reset-01",
+  "family": "power_cut_after_reset",
+  "seed": 191656967,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.2.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2190,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_after_reset-02",
+  "family": "power_cut_after_reset",
+  "seed": 941278483,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.8.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2817,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_after_reset-03",
+  "family": "power_cut_after_reset",
+  "seed": 483317150,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.7.15",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1888,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_after_reset-04",
+  "family": "power_cut_after_reset",
+  "seed": 791756013,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.0.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2295,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_after_reset-05",
+  "family": "power_cut_after_reset",
+  "seed": 798035710,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "6.4.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2103,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_after_reset-06",
+  "family": "power_cut_after_reset",
+  "seed": 538149539,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.2.4",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1091,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_after_reset-07",
+  "family": "power_cut_after_reset",
+  "seed": 353901341,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.5.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 366,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_after_reset-08",
+  "family": "power_cut_after_reset",
+  "seed": 298771148,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "3.4.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2022,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_after_reset-09",
+  "family": "power_cut_after_reset",
+  "seed": 698935648,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.6.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 717,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-power_cut_after_reset-10",
+  "family": "power_cut_after_reset",
+  "seed": 876654573,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "3.6.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 683,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_dip-01",
+  "family": "brownout_dip",
+  "seed": 8609154,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.6.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12185,
+    "duration_ms": 472,
+    "at": {
+     "step": "transfer",
+     "block": 13
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_dip-02",
+  "family": "brownout_dip",
+  "seed": 371197386,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.4.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12110,
+    "duration_ms": 1942,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_dip-03",
+  "family": "brownout_dip",
+  "seed": 958629230,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "6.9.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12005,
+    "duration_ms": 3740,
+    "at": {
+     "step": "transfer",
+     "block": 11
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_dip-04",
+  "family": "brownout_dip",
+  "seed": 439851337,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.9.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11049,
+    "duration_ms": 1267,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_dip-05",
+  "family": "brownout_dip",
+  "seed": 802573197,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.2.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11895,
+    "duration_ms": 4420,
+    "at": {
+     "step": "transfer",
+     "block": 37
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_dip-06",
+  "family": "brownout_dip",
+  "seed": 949862797,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.0.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11624,
+    "duration_ms": 4717,
+    "at": {
+     "step": "transfer",
+     "block": 29
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_dip-07",
+  "family": "brownout_dip",
+  "seed": 242870460,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.9.15",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11783,
+    "duration_ms": 1970,
+    "at": {
+     "step": "transfer",
+     "block": 21
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_dip-08",
+  "family": "brownout_dip",
+  "seed": 427089972,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.9.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11625,
+    "duration_ms": 1695,
+    "at": {
+     "step": "transfer",
+     "block": 30
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_dip-09",
+  "family": "brownout_dip",
+  "seed": 7557506,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "5.5.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12186,
+    "duration_ms": 3788,
+    "at": {
+     "step": "transfer",
+     "block": 22
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_dip-10",
+  "family": "brownout_dip",
+  "seed": 145482841,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.9.18",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12311,
+    "duration_ms": 5614,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-brownout_persistent-01",
+  "family": "brownout_persistent",
+  "seed": 335189972,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "2.6.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12102
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-dev-brownout_persistent-02",
+  "family": "brownout_persistent",
+  "seed": 21749867,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "4.1.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12369
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-dev-brownout_persistent-03",
+  "family": "brownout_persistent",
+  "seed": 326567766,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.8.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12205
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-dev-brownout_persistent-04",
+  "family": "brownout_persistent",
+  "seed": 97470118,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.2.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11545
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-dev-brownout_persistent-05",
+  "family": "brownout_persistent",
+  "seed": 143879053,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.1.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11406
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-dev-brownout_persistent-06",
+  "family": "brownout_persistent",
+  "seed": 199830742,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.8.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11802
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-dev-brownout_persistent-07",
+  "family": "brownout_persistent",
+  "seed": 446050240,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "6.3.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12314
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-dev-brownout_persistent-08",
+  "family": "brownout_persistent",
+  "seed": 790721008,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "6.1.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11547
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-dev-brownout_persistent-09",
+  "family": "brownout_persistent",
+  "seed": 579306546,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.4.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11748
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-dev-brownout_persistent-10",
+  "family": "brownout_persistent",
+  "seed": 370146662,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.8.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12117
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-dev-harness_fault-01",
+  "family": "harness_fault",
+  "seed": 524474452,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.3.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 6696,
+    "at": {
+     "step": "transfer",
+     "block": 2
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-harness_fault-02",
+  "family": "harness_fault",
+  "seed": 407809014,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.3.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 2813,
+    "at": {
+     "step": "transfer",
+     "block": 5
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-harness_fault-03",
+  "family": "harness_fault",
+  "seed": 986535799,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "4.9.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 2762,
+    "at": {
+     "step": "transfer",
+     "block": 17
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-harness_fault-04",
+  "family": "harness_fault",
+  "seed": 665208539,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.7.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 6665,
+    "at": {
+     "step": "transfer",
+     "block": 25
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-harness_fault-05",
+  "family": "harness_fault",
+  "seed": 146514700,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "3.3.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 3829,
+    "at": {
+     "step": "transfer",
+     "block": 4
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-harness_fault-06",
+  "family": "harness_fault",
+  "seed": 401066763,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.7.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 1006,
+    "at": {
+     "step": "transfer",
+     "block": 2
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-harness_fault-07",
+  "family": "harness_fault",
+  "seed": 949804904,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.0.15",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 4598,
+    "at": {
+     "step": "transfer",
+     "block": 22
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-harness_fault-08",
+  "family": "harness_fault",
+  "seed": 858361559,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.1.7",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 8210,
+    "at": {
+     "step": "transfer",
+     "block": 15
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-harness_fault-09",
+  "family": "harness_fault",
+  "seed": 506240831,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.2.7",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 4747,
+    "at": {
+     "step": "transfer",
+     "block": 27
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-harness_fault-10",
+  "family": "harness_fault",
+  "seed": 553782196,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.3.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 8231,
+    "at": {
+     "step": "transfer",
+     "block": 11
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-harness_fault_long-01",
+  "family": "harness_fault_long",
+  "seed": 33096648,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.1.1",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 55741,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-dev-harness_fault_long-02",
+  "family": "harness_fault_long",
+  "seed": 420658293,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.9.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 45245,
+    "at": {
+     "step": "transfer",
+     "block": 26
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-dev-harness_fault_long-03",
+  "family": "harness_fault_long",
+  "seed": 311767916,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "2.0.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 57779,
+    "at": {
+     "step": "transfer",
+     "block": 29
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-dev-harness_fault_long-04",
+  "family": "harness_fault_long",
+  "seed": 170764572,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.4.4",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 49941,
+    "at": {
+     "step": "transfer",
+     "block": 30
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-dev-harness_fault_long-05",
+  "family": "harness_fault_long",
+  "seed": 276864887,
+  "ecu": "BMS",
+  "image": {
+   "version": "2.8.1",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 48965,
+    "at": {
+     "step": "transfer",
+     "block": 3
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-dev-harness_fault_long-06",
+  "family": "harness_fault_long",
+  "seed": 59319703,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.1.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 44270,
+    "at": {
+     "step": "transfer",
+     "block": 32
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-dev-harness_fault_long-07",
+  "family": "harness_fault_long",
+  "seed": 708250813,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.7.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 48514,
+    "at": {
+     "step": "transfer",
+     "block": 18
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-dev-harness_fault_long-08",
+  "family": "harness_fault_long",
+  "seed": 376403496,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "5.0.18",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 54040,
+    "at": {
+     "step": "transfer",
+     "block": 12
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-dev-harness_fault_long-09",
+  "family": "harness_fault_long",
+  "seed": 428140248,
+  "ecu": "BMS",
+  "image": {
+   "version": "7.8.13",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 57576,
+    "at": {
+     "step": "transfer",
+     "block": 46
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-dev-harness_fault_long-10",
+  "family": "harness_fault_long",
+  "seed": 155229173,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.4.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 45818,
+    "at": {
+     "step": "transfer",
+     "block": 9
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-dev-bad_build-01",
+  "family": "bad_build",
+  "seed": 919341674,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.0.6",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-dev-bad_build-02",
+  "family": "bad_build",
+  "seed": 795112683,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.8.15",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-dev-bad_build-03",
+  "family": "bad_build",
+  "seed": 71266493,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "2.2.17",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-dev-bad_build-04",
+  "family": "bad_build",
+  "seed": 579798005,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.7.0",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-dev-bad_build-05",
+  "family": "bad_build",
+  "seed": 73429585,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.1.9",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-dev-bad_build-06",
+  "family": "bad_build",
+  "seed": 558990058,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.5.4",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-dev-bad_build-07",
+  "family": "bad_build",
+  "seed": 526970997,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.1.13",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-dev-bad_build-08",
+  "family": "bad_build",
+  "seed": 839864134,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.5.16",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-dev-bad_build-09",
+  "family": "bad_build",
+  "seed": 963386327,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.2.20",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-dev-bad_build-10",
+  "family": "bad_build",
+  "seed": 795324590,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.2.6",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-dev-combined-01",
+  "family": "combined",
+  "seed": 271370532,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "3.6.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.007
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 1430,
+    "at": {
+     "step": "transfer",
+     "block": 37
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 141,
+    "at": {
+     "step": "transfer",
+     "block": 21
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-combined-02",
+  "family": "combined",
+  "seed": 585553060,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "6.5.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.031
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 2330,
+    "at": {
+     "step": "transfer",
+     "block": 11
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 133,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-combined-03",
+  "family": "combined",
+  "seed": 703439304,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.5.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.007
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 1345,
+    "at": {
+     "step": "transfer",
+     "block": 37
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 127,
+    "at": {
+     "step": "transfer",
+     "block": 30
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-combined-04",
+  "family": "combined",
+  "seed": 120475125,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.1.18",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.007
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 2215,
+    "at": {
+     "step": "transfer",
+     "block": 9
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 69,
+    "at": {
+     "step": "transfer",
+     "block": 16
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-combined-05",
+  "family": "combined",
+  "seed": 660111290,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.5.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.026
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 1594,
+    "at": {
+     "step": "transfer",
+     "block": 30
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 141,
+    "at": {
+     "step": "transfer",
+     "block": 33
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-combined-06",
+  "family": "combined",
+  "seed": 474877543,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "2.2.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.01
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 661,
+    "at": {
+     "step": "transfer",
+     "block": 19
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 52,
+    "at": {
+     "step": "transfer",
+     "block": 25
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-combined-07",
+  "family": "combined",
+  "seed": 570649151,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "2.1.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.009
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 1271,
+    "at": {
+     "step": "transfer",
+     "block": 23
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 22,
+    "at": {
+     "step": "transfer",
+     "block": 21
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-combined-08",
+  "family": "combined",
+  "seed": 372303350,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.3.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.035
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 289,
+    "at": {
+     "step": "transfer",
+     "block": 33
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 99,
+    "at": {
+     "step": "transfer",
+     "block": 32
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-combined-09",
+  "family": "combined",
+  "seed": 1060030878,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.3.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.02
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 2967,
+    "at": {
+     "step": "transfer",
+     "block": 16
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 98,
+    "at": {
+     "step": "transfer",
+     "block": 35
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-combined-10",
+  "family": "combined",
+  "seed": 874692384,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "9.1.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.005
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 2379,
+    "at": {
+     "step": "transfer",
+     "block": 7
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 102,
+    "at": {
+     "step": "transfer",
+     "block": 17
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-dev-flaky_supply-01",
+  "family": "flaky_supply",
+  "seed": 913962869,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.6.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 920,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 2
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-dev-flaky_supply-02",
+  "family": "flaky_supply",
+  "seed": 11826356,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "2.3.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 445,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 18
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-dev-flaky_supply-03",
+  "family": "flaky_supply",
+  "seed": 606678853,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.8.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1042,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 34
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-dev-flaky_supply-04",
+  "family": "flaky_supply",
+  "seed": 281199410,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "6.7.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1109,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 17
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-dev-flaky_supply-05",
+  "family": "flaky_supply",
+  "seed": 20628333,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.4.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1707,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 14
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-dev-flaky_supply-06",
+  "family": "flaky_supply",
+  "seed": 604634709,
+  "ecu": "BMS",
+  "image": {
+   "version": "7.6.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1738,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 43
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-dev-flaky_supply-07",
+  "family": "flaky_supply",
+  "seed": 823380008,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.1.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1151,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 18
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-dev-flaky_supply-08",
+  "family": "flaky_supply",
+  "seed": 834208973,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.7.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1845,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 30
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-dev-flaky_supply-09",
+  "family": "flaky_supply",
+  "seed": 891623254,
+  "ecu": "BMS",
+  "image": {
+   "version": "9.5.4",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 237,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 10
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-dev-flaky_supply-10",
+  "family": "flaky_supply",
+  "seed": 616638979,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "6.5.4",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 728,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 14
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-dev-wrong_key-01",
+  "family": "wrong_key",
+  "seed": 721347072,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.4.13",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "7dcada54d4620a8bb728b7f93728aab9"
+ },
+ {
+  "id": "flash-dev-wrong_key-02",
+  "family": "wrong_key",
+  "seed": 278034979,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.1.2",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "baec1fcf3aaeb5ed264c679bf76d8381"
+ },
+ {
+  "id": "flash-dev-wrong_key-03",
+  "family": "wrong_key",
+  "seed": 1030334850,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.4.4",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "2ffbbd51b937a988a65023ba662d6088"
+ },
+ {
+  "id": "flash-dev-wrong_key-04",
+  "family": "wrong_key",
+  "seed": 109247681,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.6.19",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "58c17f6b6c0046f488d4161a37e10355"
+ },
+ {
+  "id": "flash-dev-wrong_key-05",
+  "family": "wrong_key",
+  "seed": 254791707,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.8.13",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "7ace77832dd5ad98475c61b1af3ef55c"
+ },
+ {
+  "id": "flash-dev-wrong_key-06",
+  "family": "wrong_key",
+  "seed": 265833391,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.1.12",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "820062ecae94e3864b53d2837281c9e4"
+ },
+ {
+  "id": "flash-dev-wrong_key-07",
+  "family": "wrong_key",
+  "seed": 1029054417,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.1.19",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "e7c7999c9d173f5b62e8c79c262d9d55"
+ },
+ {
+  "id": "flash-dev-wrong_key-08",
+  "family": "wrong_key",
+  "seed": 894650349,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.8.8",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "896631d2fdf7f3a1ef65f0f8e350835f"
+ },
+ {
+  "id": "flash-dev-wrong_key-09",
+  "family": "wrong_key",
+  "seed": 723893748,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.8.6",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "fd2cf1a3c1fd9e0002311cea1a54fec6"
+ },
+ {
+  "id": "flash-dev-wrong_key-10",
+  "family": "wrong_key",
+  "seed": 945432332,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "6.0.17",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "19cb517bd7a6965be7792a6fc285df1a"
+ }
+]

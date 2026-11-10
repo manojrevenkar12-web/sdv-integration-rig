@@ -1,0 +1,2311 @@
+{
+ "set": "dev",
+ "scenarios": 8,
+ "seconds": 66.1,
+ "summary": {
+  "none": {
+   "defective_releases": 8,
+   "caught": 0,
+   "caught_right_dtc": 0,
+   "healthy_releases": 16,
+   "false_halts": 0,
+   "median_days_to_halt": null,
+   "median_fleet_share_on_bad_release": 1.0,
+   "median_bad_exposure_avoided": 0.0,
+   "localization_correct": null,
+   "localization_checked": null
+  },
+  "stratified": {
+   "defective_releases": 8,
+   "caught": 8,
+   "caught_right_dtc": 8,
+   "healthy_releases": 16,
+   "false_halts": 0,
+   "median_days_to_halt": 4.0,
+   "median_fleet_share_on_bad_release": 0.060000000000000005,
+   "median_bad_exposure_avoided": 0.924,
+   "localization_correct": 7,
+   "localization_checked": 8
+  },
+  "pooled": {
+   "defective_releases": 8,
+   "caught": 8,
+   "caught_right_dtc": 8,
+   "healthy_releases": 16,
+   "false_halts": 2,
+   "median_days_to_halt": 1.5,
+   "median_fleet_share_on_bad_release": 0.02,
+   "median_bad_exposure_avoided": 0.971,
+   "localization_correct": null,
+   "localization_checked": null
+  },
+  "before_after": {
+   "defective_releases": 8,
+   "caught": 7,
+   "caught_right_dtc": 7,
+   "healthy_releases": 16,
+   "false_halts": 1,
+   "median_days_to_halt": 8,
+   "median_fleet_share_on_bad_release": 0.5,
+   "median_bad_exposure_avoided": 0.438,
+   "localization_correct": null,
+   "localization_checked": null
+  }
+ },
+ "triage": {
+  "tickets": 8,
+  "bench_repro_attempted": 3,
+  "bench_repro_confirmed": 3,
+  "soak_test_needed": 5
+ },
+ "tickets": [
+  {
+   "owner": "Zonal Front - Body & Lighting",
+   "title": "ZCU_FRONT 3.2.0 raises B1A23-16 on HW03",
+   "evidence": {
+    "z": 4.2,
+    "rate_ratio": 15.9,
+    "exposed_events": 7,
+    "expected_events": 1.9,
+    "day": 16
+   },
+   "localization": {
+    "hardware": [
+     "HW03"
+    ],
+    "ambient_at_or_below_c": null
+   },
+   "runs": [],
+   "reproduced": null,
+   "next_step": "no temperature or hardware condition isolates the excess: run a soak test of the release on the bench fleet instead of a single repro",
+   "scenario": "fleet-dev-cold_hw-01",
+   "defective": true
+  },
+  {
+   "owner": "Propulsion - Battery Management",
+   "title": "BMS 1.9.0 raises P1A40-00 on HW08 at or below -10 \u00b0C",
+   "evidence": {
+    "z": 4.33,
+    "rate_ratio": 5.21,
+    "exposed_events": 14,
+    "expected_events": 5.3,
+    "day": 13
+   },
+   "localization": {
+    "hardware": [
+     "HW08"
+    ],
+    "ambient_at_or_below_c": -10
+   },
+   "runs": [
+    {
+     "hardware": "HW08",
+     "ambient_c": 20,
+     "version": "1.9.0",
+     "flash": "updated",
+     "dtcs": [],
+     "role": "room",
+     "as_expected": true
+    },
+    {
+     "hardware": "HW08",
+     "ambient_c": -15,
+     "version": "1.9.0",
+     "flash": "updated",
+     "dtcs": [
+      "P1A40-00"
+     ],
+     "role": "field",
+     "as_expected": true
+    },
+    {
+     "hardware": "HW07",
+     "ambient_c": -15,
+     "version": "1.9.0",
+     "flash": "updated",
+     "dtcs": [],
+     "role": "control-hw",
+     "as_expected": true
+    },
+    {
+     "hardware": "HW08",
+     "ambient_c": -15,
+     "version": "1.8.2",
+     "flash": "not flashed",
+     "dtcs": [],
+     "role": "control-previous",
+     "as_expected": true
+    }
+   ],
+   "reproduced": true,
+   "next_step": "bench repro confirmed: keep the rollout halted, attach the repro to the fix, and add the field condition to the release gate",
+   "scenario": "fleet-dev-cold_hw-02",
+   "defective": true
+  },
+  {
+   "owner": "Propulsion - Battery Management",
+   "title": "BMS 1.9.0 raises P1A40-00",
+   "evidence": {
+    "z": 4.74,
+    "rate_ratio": 2.69,
+    "exposed_events": 54,
+    "expected_events": 34.6,
+    "day": 14
+   },
+   "localization": {
+    "hardware": "all",
+    "ambient_at_or_below_c": null
+   },
+   "runs": [],
+   "reproduced": null,
+   "next_step": "no temperature or hardware condition isolates the excess: run a soak test of the release on the bench fleet instead of a single repro",
+   "scenario": "fleet-dev-always-01",
+   "defective": true
+  },
+  {
+   "owner": "Zonal Rear - Body & Closures",
+   "title": "ZCU_REAR 3.2.0 raises B1B10-11",
+   "evidence": {
+    "z": 5.53,
+    "rate_ratio": 6.93,
+    "exposed_events": 19,
+    "expected_events": 8.3,
+    "day": 23
+   },
+   "localization": {
+    "hardware": "all",
+    "ambient_at_or_below_c": null
+   },
+   "runs": [],
+   "reproduced": null,
+   "next_step": "no temperature or hardware condition isolates the excess: run a soak test of the release on the bench fleet instead of a single repro",
+   "scenario": "fleet-dev-always-02",
+   "defective": true
+  },
+  {
+   "owner": "Propulsion - Thermal Management",
+   "title": "THERMAL 2.1.0 raises P1C02-00",
+   "evidence": {
+    "z": 4.37,
+    "rate_ratio": 2.97,
+    "exposed_events": 42,
+    "expected_events": 26.5,
+    "day": 21
+   },
+   "localization": {
+    "hardware": "all",
+    "ambient_at_or_below_c": null
+   },
+   "runs": [],
+   "reproduced": null,
+   "next_step": "no temperature or hardware condition isolates the excess: run a soak test of the release on the bench fleet instead of a single repro",
+   "scenario": "fleet-dev-mixed-01",
+   "defective": true
+  },
+  {
+   "owner": "Propulsion - Battery Management",
+   "title": "BMS 1.9.0 raises P1A40-00 on HW07 at or below -10 \u00b0C",
+   "evidence": {
+    "z": 4.91,
+    "rate_ratio": 6.95,
+    "exposed_events": 12,
+    "expected_events": 3.6,
+    "day": 14
+   },
+   "localization": {
+    "hardware": [
+     "HW07"
+    ],
+    "ambient_at_or_below_c": -10
+   },
+   "runs": [
+    {
+     "hardware": "HW07",
+     "ambient_c": 20,
+     "version": "1.9.0",
+     "flash": "updated",
+     "dtcs": [],
+     "role": "room",
+     "as_expected": true
+    },
+    {
+     "hardware": "HW07",
+     "ambient_c": -15,
+     "version": "1.9.0",
+     "flash": "updated",
+     "dtcs": [
+      "P1A40-00"
+     ],
+     "role": "field",
+     "as_expected": true
+    },
+    {
+     "hardware": "HW08",
+     "ambient_c": -15,
+     "version": "1.9.0",
+     "flash": "updated",
+     "dtcs": [],
+     "role": "control-hw",
+     "as_expected": true
+    },
+    {
+     "hardware": "HW07",
+     "ambient_c": -15,
+     "version": "1.8.2",
+     "flash": "not flashed",
+     "dtcs": [],
+     "role": "control-previous",
+     "as_expected": true
+    }
+   ],
+   "reproduced": true,
+   "next_step": "bench repro confirmed: keep the rollout halted, attach the repro to the fix, and add the field condition to the release gate",
+   "scenario": "fleet-dev-mixed-01",
+   "defective": true
+  },
+  {
+   "owner": "Zonal Front - Body & Lighting",
+   "title": "ZCU_FRONT 3.2.0 raises B1A23-16",
+   "evidence": {
+    "z": 4.79,
+    "rate_ratio": 5.63,
+    "exposed_events": 31,
+    "expected_events": 17.4,
+    "day": 17
+   },
+   "localization": {
+    "hardware": "all",
+    "ambient_at_or_below_c": null
+   },
+   "runs": [],
+   "reproduced": null,
+   "next_step": "no temperature or hardware condition isolates the excess: run a soak test of the release on the bench fleet instead of a single repro",
+   "scenario": "fleet-dev-mixed-02",
+   "defective": true
+  },
+  {
+   "owner": "Propulsion - Thermal Management",
+   "title": "THERMAL 2.1.0 raises P1C02-00 at or below -10 \u00b0C",
+   "evidence": {
+    "z": 4.21,
+    "rate_ratio": 8.98,
+    "exposed_events": 8,
+    "expected_events": 2.3,
+    "day": 16
+   },
+   "localization": {
+    "hardware": "all",
+    "ambient_at_or_below_c": -10
+   },
+   "runs": [
+    {
+     "hardware": "HW02",
+     "ambient_c": 20,
+     "version": "2.1.0",
+     "flash": "updated",
+     "dtcs": [],
+     "role": "room",
+     "as_expected": true
+    },
+    {
+     "hardware": "HW02",
+     "ambient_c": -15,
+     "version": "2.1.0",
+     "flash": "updated",
+     "dtcs": [
+      "P1C02-00"
+     ],
+     "role": "field",
+     "as_expected": true
+    },
+    {
+     "hardware": "HW02",
+     "ambient_c": -15,
+     "version": "2.0.4",
+     "flash": "not flashed",
+     "dtcs": [],
+     "role": "control-previous",
+     "as_expected": true
+    }
+   ],
+   "reproduced": true,
+   "next_step": "bench repro confirmed: keep the rollout halted, attach the repro to the fix, and add the field condition to the release gate",
+   "scenario": "fleet-dev-mixed-02",
+   "defective": true
+  }
+ ],
+ "results": [
+  {
+   "id": "fleet-dev-cold_hw-01",
+   "kind": "cold_hw",
+   "methods": {
+    "none": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 15,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 163840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 16,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW03",
+        "dtc": "B1A23-16",
+        "rate": 0.068
+       },
+       "halted_day": null,
+       "installed": 8000,
+       "defective": true,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 155840
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 17,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 147840
+      }
+     ],
+     "seconds": 1.28,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "stratified": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 15,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 163840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 16,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW03",
+        "dtc": "B1A23-16",
+        "rate": 0.068
+       },
+       "halted_day": 16,
+       "installed": 160,
+       "defective": true,
+       "halt": {
+        "method": "stratified",
+        "ecu": "ZCU_FRONT",
+        "version": "3.2.0",
+        "dtc": "B1A23-16",
+        "day": 16,
+        "z": 4.2,
+        "rate_ratio": 15.9,
+        "exposed_events": 7,
+        "expected_events": 1.9,
+        "localization": {
+         "hardware": [
+          "HW03"
+         ],
+         "ambient_at_or_below_c": null
+        },
+        "triage_localization": {
+         "hardware": [
+          "HW03"
+         ],
+         "ambient_at_or_below_c": null
+        }
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 4640
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 17,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 147840
+      }
+     ],
+     "seconds": 1.94,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "pooled": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 15,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 163840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 16,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW03",
+        "dtc": "B1A23-16",
+        "rate": 0.068
+       },
+       "halted_day": 16,
+       "installed": 160,
+       "defective": true,
+       "halt": {
+        "method": "pooled",
+        "ecu": "ZCU_FRONT",
+        "version": "3.2.0",
+        "dtc": "B1A23-16",
+        "day": 16,
+        "z": 10.26,
+        "rate_ratio": 24.5,
+        "exposed_events": 7,
+        "expected_events": 0.4,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 4640
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 17,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 147840
+      }
+     ],
+     "seconds": 2.28,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "before_after": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 15,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 163840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 16,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW03",
+        "dtc": "B1A23-16",
+        "rate": 0.068
+       },
+       "halted_day": 24,
+       "installed": 4000,
+       "defective": true,
+       "halt": {
+        "method": "before_after",
+        "ecu": "ZCU_FRONT",
+        "version": "3.2.0",
+        "dtc": "B1A23-16",
+        "day": 24,
+        "z": 6.84,
+        "rate_ratio": 1.63,
+        "exposed_events": 191,
+        "expected_events": 117.0,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.5,
+       "vehicle_days": 87840
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 17,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 147840
+      }
+     ],
+     "seconds": 2.05,
+     "vehicles": 8000,
+     "records": 360000
+    }
+   }
+  },
+  {
+   "id": "fleet-dev-cold_hw-02",
+   "kind": "cold_hw",
+   "methods": {
+    "none": {
+     "releases": [
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 12,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 187840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 10,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW08",
+        "dtc": "P1A40-00",
+        "rate": 0.078
+       },
+       "halted_day": null,
+       "installed": 8000,
+       "defective": true,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 203840
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 9,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 211840
+      }
+     ],
+     "seconds": 1.41,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "stratified": {
+     "releases": [
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 12,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 187840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 10,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW08",
+        "dtc": "P1A40-00",
+        "rate": 0.078
+       },
+       "halted_day": 13,
+       "installed": 160,
+       "defective": true,
+       "halt": {
+        "method": "stratified",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 13,
+        "z": 4.33,
+        "rate_ratio": 5.21,
+        "exposed_events": 14,
+        "expected_events": 5.3,
+        "localization": {
+         "hardware": [
+          "HW08"
+         ],
+         "ambient_at_or_below_c": null
+        },
+        "triage_localization": {
+         "hardware": [
+          "HW08"
+         ],
+         "ambient_at_or_below_c": -10
+        }
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 5600
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 9,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 211840
+      }
+     ],
+     "seconds": 2.14,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "pooled": {
+     "releases": [
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 12,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 187840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 10,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW08",
+        "dtc": "P1A40-00",
+        "rate": 0.078
+       },
+       "halted_day": 11,
+       "installed": 160,
+       "defective": true,
+       "halt": {
+        "method": "pooled",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 11,
+        "z": 4.48,
+        "rate_ratio": 5.55,
+        "exposed_events": 6,
+        "expected_events": 1.2,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 5600
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 9,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 211840
+      }
+     ],
+     "seconds": 1.99,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "before_after": {
+     "releases": [
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 12,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 187840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 10,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW08",
+        "dtc": "P1A40-00",
+        "rate": 0.078
+       },
+       "halted_day": 29,
+       "installed": 8000,
+       "defective": true,
+       "halt": {
+        "method": "before_after",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 29,
+        "z": 12.93,
+        "rate_ratio": 1.51,
+        "exposed_events": 985,
+        "expected_events": 654.3,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 1.0,
+       "vehicle_days": 203840
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 9,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 211840
+      }
+     ],
+     "seconds": 2.04,
+     "vehicles": 8000,
+     "records": 360000
+    }
+   }
+  },
+  {
+   "id": "fleet-dev-always-01",
+   "kind": "always",
+   "methods": {
+    "none": {
+     "releases": [
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 8,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "P1A40-00",
+        "rate": 0.011
+       },
+       "halted_day": null,
+       "installed": 8000,
+       "defective": true,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 219840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 8,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 219840
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 11,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 195840
+      }
+     ],
+     "seconds": 1.49,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "stratified": {
+     "releases": [
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 8,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "P1A40-00",
+        "rate": 0.011
+       },
+       "halted_day": 14,
+       "installed": 800,
+       "defective": true,
+       "halt": {
+        "method": "stratified",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 14,
+        "z": 4.74,
+        "rate_ratio": 2.69,
+        "exposed_events": 54,
+        "expected_events": 34.6,
+        "localization": {
+         "hardware": "all",
+         "ambient_at_or_below_c": null
+        },
+        "triage_localization": {
+         "hardware": "all",
+         "ambient_at_or_below_c": null
+        }
+       },
+       "share_installed": 0.1,
+       "vehicle_days": 27040
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 8,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 219840
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 11,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 195840
+      }
+     ],
+     "seconds": 2.69,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "pooled": {
+     "releases": [
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 8,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "P1A40-00",
+        "rate": 0.011
+       },
+       "halted_day": 9,
+       "installed": 160,
+       "defective": true,
+       "halt": {
+        "method": "pooled",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 9,
+        "z": 4.48,
+        "rate_ratio": 5.55,
+        "exposed_events": 6,
+        "expected_events": 1.2,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 5920
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 8,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 219840
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 11,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 195840
+      }
+     ],
+     "seconds": 2.39,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "before_after": {
+     "releases": [
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 8,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "P1A40-00",
+        "rate": 0.011
+       },
+       "halted_day": 17,
+       "installed": 4000,
+       "defective": true,
+       "halt": {
+        "method": "before_after",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 17,
+        "z": 11.0,
+        "rate_ratio": 1.66,
+        "exposed_events": 464,
+        "expected_events": 280.0,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.5,
+       "vehicle_days": 119840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 8,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 219840
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 11,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 195840
+      }
+     ],
+     "seconds": 1.96,
+     "vehicles": 8000,
+     "records": 360000
+    }
+   }
+  },
+  {
+   "id": "fleet-dev-always-02",
+   "kind": "always",
+   "methods": {
+    "none": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 17,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "B1B10-11",
+        "rate": 0.0059
+       },
+       "halted_day": null,
+       "installed": 8000,
+       "defective": true,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 147840
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 11,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 195840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 16,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 155840
+      }
+     ],
+     "seconds": 1.43,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "stratified": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 17,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "B1B10-11",
+        "rate": 0.0059
+       },
+       "halted_day": 23,
+       "installed": 800,
+       "defective": true,
+       "halt": {
+        "method": "stratified",
+        "ecu": "ZCU_REAR",
+        "version": "3.2.0",
+        "dtc": "B1B10-11",
+        "day": 23,
+        "z": 5.53,
+        "rate_ratio": 6.93,
+        "exposed_events": 19,
+        "expected_events": 8.3,
+        "localization": {
+         "hardware": "all",
+         "ambient_at_or_below_c": null
+        },
+        "triage_localization": {
+         "hardware": "all",
+         "ambient_at_or_below_c": null
+        }
+       },
+       "share_installed": 0.1,
+       "vehicle_days": 19840
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 11,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 195840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 16,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 155840
+      }
+     ],
+     "seconds": 2.34,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "pooled": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 17,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "B1B10-11",
+        "rate": 0.0059
+       },
+       "halted_day": 21,
+       "installed": 800,
+       "defective": true,
+       "halt": {
+        "method": "pooled",
+        "ecu": "ZCU_REAR",
+        "version": "3.2.0",
+        "dtc": "B1B10-11",
+        "day": 21,
+        "z": 4.31,
+        "rate_ratio": 4.93,
+        "exposed_events": 7,
+        "expected_events": 1.6,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.1,
+       "vehicle_days": 19840
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 11,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 195840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 16,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 155840
+      }
+     ],
+     "seconds": 2.44,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "before_after": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 17,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "B1B10-11",
+        "rate": 0.0059
+       },
+       "halted_day": 25,
+       "installed": 4000,
+       "defective": true,
+       "halt": {
+        "method": "before_after",
+        "ecu": "ZCU_REAR",
+        "version": "3.2.0",
+        "dtc": "B1B10-11",
+        "day": 25,
+        "z": 6.74,
+        "rate_ratio": 1.82,
+        "exposed_events": 122,
+        "expected_events": 66.9,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.5,
+       "vehicle_days": 83840
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 11,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 195840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 16,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 155840
+      }
+     ],
+     "seconds": 2.53,
+     "vehicles": 8000,
+     "records": 360000
+    }
+   }
+  },
+  {
+   "id": "fleet-dev-healthy_cold_snap-01",
+   "kind": "healthy_cold_snap",
+   "methods": {
+    "none": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 15,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 163840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 18,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 139840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 12,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 187840
+      }
+     ],
+     "seconds": 1.35,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "stratified": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 15,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 163840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 18,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 139840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 12,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 187840
+      }
+     ],
+     "seconds": 2.32,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "pooled": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 15,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 163840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 18,
+       "defect": null,
+       "halted_day": 20,
+       "installed": 160,
+       "defective": false,
+       "halt": {
+        "method": "pooled",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 20,
+        "z": 4.01,
+        "rate_ratio": 3.64,
+        "exposed_events": 9,
+        "expected_events": 2.6,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 4320
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 12,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 187840
+      }
+     ],
+     "seconds": 1.99,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "before_after": {
+     "releases": [
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 15,
+       "defect": null,
+       "halted_day": 20,
+       "installed": 800,
+       "defective": false,
+       "halt": {
+        "method": "before_after",
+        "ecu": "ZCU_REAR",
+        "version": "3.2.0",
+        "dtc": "B1B10-11",
+        "day": 20,
+        "z": 4.45,
+        "rate_ratio": 1.68,
+        "exposed_events": 72,
+        "expected_events": 42.9,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.1,
+       "vehicle_days": 21440
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 18,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 139840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 12,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 187840
+      }
+     ],
+     "seconds": 1.9,
+     "vehicles": 8000,
+     "records": 360000
+    }
+   }
+  },
+  {
+   "id": "fleet-dev-healthy_cold_snap-02",
+   "kind": "healthy_cold_snap",
+   "methods": {
+    "none": {
+     "releases": [
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 17,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 147840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 20,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 123840
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 9,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 211840
+      }
+     ],
+     "seconds": 1.33,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "stratified": {
+     "releases": [
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 17,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 147840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 20,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 123840
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 9,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 211840
+      }
+     ],
+     "seconds": 2.17,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "pooled": {
+     "releases": [
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 17,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 147840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 20,
+       "defect": null,
+       "halted_day": 24,
+       "installed": 800,
+       "defective": false,
+       "halt": {
+        "method": "pooled",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 24,
+        "z": 4.95,
+        "rate_ratio": 2.96,
+        "exposed_events": 21,
+        "expected_events": 7.6,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.1,
+       "vehicle_days": 17440
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 9,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 211840
+      }
+     ],
+     "seconds": 2.08,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "before_after": {
+     "releases": [
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 17,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 147840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 20,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 123840
+      },
+      {
+       "ecu": "ZCU_REAR",
+       "version": "3.2.0",
+       "start_day": 9,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 211840
+      }
+     ],
+     "seconds": 1.9,
+     "vehicles": 8000,
+     "records": 360000
+    }
+   }
+  },
+  {
+   "id": "fleet-dev-mixed-01",
+   "kind": "mixed",
+   "methods": {
+    "none": {
+     "releases": [
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 15,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "P1C02-00",
+        "rate": 0.0072
+       },
+       "halted_day": null,
+       "installed": 8000,
+       "defective": true,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 163840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 14,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW07",
+        "dtc": "P1A40-00",
+        "rate": 0.054
+       },
+       "halted_day": null,
+       "installed": 8000,
+       "defective": true,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 171840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 19,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 131840
+      }
+     ],
+     "seconds": 1.37,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "stratified": {
+     "releases": [
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 15,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "P1C02-00",
+        "rate": 0.0072
+       },
+       "halted_day": 21,
+       "installed": 800,
+       "defective": true,
+       "halt": {
+        "method": "stratified",
+        "ecu": "THERMAL",
+        "version": "2.1.0",
+        "dtc": "P1C02-00",
+        "day": 21,
+        "z": 4.37,
+        "rate_ratio": 2.97,
+        "exposed_events": 42,
+        "expected_events": 26.5,
+        "localization": {
+         "hardware": "all",
+         "ambient_at_or_below_c": null
+        },
+        "triage_localization": {
+         "hardware": "all",
+         "ambient_at_or_below_c": null
+        }
+       },
+       "share_installed": 0.1,
+       "vehicle_days": 21440
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 14,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW07",
+        "dtc": "P1A40-00",
+        "rate": 0.054
+       },
+       "halted_day": 14,
+       "installed": 160,
+       "defective": true,
+       "halt": {
+        "method": "stratified",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 14,
+        "z": 4.91,
+        "rate_ratio": 6.95,
+        "exposed_events": 12,
+        "expected_events": 3.6,
+        "localization": {
+         "hardware": [
+          "HW07"
+         ],
+         "ambient_at_or_below_c": null
+        },
+        "triage_localization": {
+         "hardware": [
+          "HW07"
+         ],
+         "ambient_at_or_below_c": -10
+        }
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 4960
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 19,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 131840
+      }
+     ],
+     "seconds": 2.09,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "pooled": {
+     "releases": [
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 15,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "P1C02-00",
+        "rate": 0.0072
+       },
+       "halted_day": 17,
+       "installed": 160,
+       "defective": true,
+       "halt": {
+        "method": "pooled",
+        "ecu": "THERMAL",
+        "version": "2.1.0",
+        "dtc": "P1C02-00",
+        "day": 17,
+        "z": 4.11,
+        "rate_ratio": 4.9,
+        "exposed_events": 6,
+        "expected_events": 1.3,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 4800
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 14,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW07",
+        "dtc": "P1A40-00",
+        "rate": 0.054
+       },
+       "halted_day": 14,
+       "installed": 160,
+       "defective": true,
+       "halt": {
+        "method": "pooled",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 14,
+        "z": 13.22,
+        "rate_ratio": 23.52,
+        "exposed_events": 12,
+        "expected_events": 0.7,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 4960
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 19,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 131840
+      }
+     ],
+     "seconds": 2.11,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "before_after": {
+     "releases": [
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 15,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "P1C02-00",
+        "rate": 0.0072
+       },
+       "halted_day": 23,
+       "installed": 4000,
+       "defective": true,
+       "halt": {
+        "method": "before_after",
+        "ecu": "THERMAL",
+        "version": "2.1.0",
+        "dtc": "P1C02-00",
+        "day": 23,
+        "z": 6.55,
+        "rate_ratio": 1.5,
+        "exposed_events": 255,
+        "expected_events": 169.7,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.5,
+       "vehicle_days": 91840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 14,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": "HW07",
+        "dtc": "P1A40-00",
+        "rate": 0.054
+       },
+       "halted_day": 23,
+       "installed": 4000,
+       "defective": true,
+       "halt": {
+        "method": "before_after",
+        "ecu": "BMS",
+        "version": "1.9.0",
+        "dtc": "P1A40-00",
+        "day": 23,
+        "z": 10.44,
+        "rate_ratio": 1.56,
+        "exposed_events": 549,
+        "expected_events": 352.9,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.5,
+       "vehicle_days": 95840
+      },
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 19,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 131840
+      }
+     ],
+     "seconds": 2.39,
+     "vehicles": 8000,
+     "records": 360000
+    }
+   }
+  },
+  {
+   "id": "fleet-dev-mixed-02",
+   "kind": "mixed",
+   "methods": {
+    "none": {
+     "releases": [
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 12,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "B1A23-16",
+        "rate": 0.0117
+       },
+       "halted_day": null,
+       "installed": 8000,
+       "defective": true,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 187840
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 13,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": null,
+        "dtc": "P1C02-00",
+        "rate": 0.028
+       },
+       "halted_day": null,
+       "installed": 8000,
+       "defective": true,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 179840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 8,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 219840
+      }
+     ],
+     "seconds": 1.28,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "stratified": {
+     "releases": [
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 12,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "B1A23-16",
+        "rate": 0.0117
+       },
+       "halted_day": 17,
+       "installed": 800,
+       "defective": true,
+       "halt": {
+        "method": "stratified",
+        "ecu": "ZCU_FRONT",
+        "version": "3.2.0",
+        "dtc": "B1A23-16",
+        "day": 17,
+        "z": 4.79,
+        "rate_ratio": 5.63,
+        "exposed_events": 31,
+        "expected_events": 17.4,
+        "localization": {
+         "hardware": "all",
+         "ambient_at_or_below_c": null
+        },
+        "triage_localization": {
+         "hardware": "all",
+         "ambient_at_or_below_c": null
+        }
+       },
+       "share_installed": 0.1,
+       "vehicle_days": 23840
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 13,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": null,
+        "dtc": "P1C02-00",
+        "rate": 0.028
+       },
+       "halted_day": 16,
+       "installed": 160,
+       "defective": true,
+       "halt": {
+        "method": "stratified",
+        "ecu": "THERMAL",
+        "version": "2.1.0",
+        "dtc": "P1C02-00",
+        "day": 16,
+        "z": 4.21,
+        "rate_ratio": 8.98,
+        "exposed_events": 8,
+        "expected_events": 2.3,
+        "localization": {
+         "hardware": "all",
+         "ambient_at_or_below_c": null
+        },
+        "triage_localization": {
+         "hardware": "all",
+         "ambient_at_or_below_c": -10
+        }
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 5120
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 8,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 219840
+      }
+     ],
+     "seconds": 2.24,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "pooled": {
+     "releases": [
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 12,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "B1A23-16",
+        "rate": 0.0117
+       },
+       "halted_day": 15,
+       "installed": 160,
+       "defective": true,
+       "halt": {
+        "method": "pooled",
+        "ecu": "ZCU_FRONT",
+        "version": "3.2.0",
+        "dtc": "B1A23-16",
+        "day": 15,
+        "z": 5.26,
+        "rate_ratio": 5.68,
+        "exposed_events": 8,
+        "expected_events": 1.5,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.02,
+       "vehicle_days": 5280
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 13,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": null,
+        "dtc": "P1C02-00",
+        "rate": 0.028
+       },
+       "halted_day": 17,
+       "installed": 800,
+       "defective": true,
+       "halt": {
+        "method": "pooled",
+        "ecu": "THERMAL",
+        "version": "2.1.0",
+        "dtc": "P1C02-00",
+        "day": 17,
+        "z": 4.84,
+        "rate_ratio": 3.35,
+        "exposed_events": 16,
+        "expected_events": 5.2,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.1,
+       "vehicle_days": 23040
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 8,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 219840
+      }
+     ],
+     "seconds": 2.28,
+     "vehicles": 8000,
+     "records": 360000
+    },
+    "before_after": {
+     "releases": [
+      {
+       "ecu": "ZCU_FRONT",
+       "version": "3.2.0",
+       "start_day": 12,
+       "defect": {
+        "when": "always",
+        "hw": null,
+        "dtc": "B1A23-16",
+        "rate": 0.0117
+       },
+       "halted_day": 18,
+       "installed": 800,
+       "defective": true,
+       "halt": {
+        "method": "before_after",
+        "ecu": "ZCU_FRONT",
+        "version": "3.2.0",
+        "dtc": "B1A23-16",
+        "day": 18,
+        "z": 5.15,
+        "rate_ratio": 1.5,
+        "exposed_events": 159,
+        "expected_events": 106.0,
+        "localization": null,
+        "triage_localization": null
+       },
+       "share_installed": 0.1,
+       "vehicle_days": 23840
+      },
+      {
+       "ecu": "THERMAL",
+       "version": "2.1.0",
+       "start_day": 13,
+       "defect": {
+        "when": "cold",
+        "below_c": -10,
+        "hw": null,
+        "dtc": "P1C02-00",
+        "rate": 0.028
+       },
+       "halted_day": null,
+       "installed": 8000,
+       "defective": true,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 179840
+      },
+      {
+       "ecu": "BMS",
+       "version": "1.9.0",
+       "start_day": 8,
+       "defect": null,
+       "halted_day": null,
+       "installed": 8000,
+       "defective": false,
+       "halt": null,
+       "share_installed": 1.0,
+       "vehicle_days": 219840
+      }
+     ],
+     "seconds": 2.42,
+     "vehicles": 8000,
+     "records": 360000
+    }
+   }
+  }
+ ]
+}

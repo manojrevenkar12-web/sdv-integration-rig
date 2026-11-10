@@ -1,0 +1,292 @@
+[
+ {
+  "id": "fleet-dev-cold_hw-01",
+  "kind": "cold_hw",
+  "seed": 1021693763,
+  "releases": [
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 15,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 16,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW03",
+     "dtc": "B1A23-16",
+     "rate": 0.068
+    }
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 17,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-dev-cold_hw-02",
+  "kind": "cold_hw",
+  "seed": 338215987,
+  "releases": [
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 12,
+    "defect": null
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 10,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW08",
+     "dtc": "P1A40-00",
+     "rate": 0.078
+    }
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 9,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-dev-always-01",
+  "kind": "always",
+  "seed": 64601866,
+  "releases": [
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 8,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "P1A40-00",
+     "rate": 0.011
+    }
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 8,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 11,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-dev-always-02",
+  "kind": "always",
+  "seed": 631685690,
+  "releases": [
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 17,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "B1B10-11",
+     "rate": 0.0059
+    }
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 11,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 16,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-dev-healthy_cold_snap-01",
+  "kind": "healthy_cold_snap",
+  "seed": 493203763,
+  "releases": [
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 15,
+    "defect": null
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 18,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 12,
+    "defect": null
+   }
+  ],
+  "forced_snaps": [
+   {
+    "region": "nordic",
+    "start": 15,
+    "length": 9,
+    "drop": 14
+   },
+   {
+    "region": "nordic",
+    "start": 18,
+    "length": 6,
+    "drop": 15
+   },
+   {
+    "region": "nordic",
+    "start": 12,
+    "length": 8,
+    "drop": 12
+   }
+  ]
+ },
+ {
+  "id": "fleet-dev-healthy_cold_snap-02",
+  "kind": "healthy_cold_snap",
+  "seed": 1170241,
+  "releases": [
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 17,
+    "defect": null
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 20,
+    "defect": null
+   },
+   {
+    "ecu": "ZCU_REAR",
+    "version": "3.2.0",
+    "start_day": 9,
+    "defect": null
+   }
+  ],
+  "forced_snaps": [
+   {
+    "region": "nordic",
+    "start": 17,
+    "length": 9,
+    "drop": 10
+   },
+   {
+    "region": "nordic",
+    "start": 20,
+    "length": 8,
+    "drop": 13
+   },
+   {
+    "region": "nordic",
+    "start": 9,
+    "length": 6,
+    "drop": 10
+   }
+  ]
+ },
+ {
+  "id": "fleet-dev-mixed-01",
+  "kind": "mixed",
+  "seed": 426254318,
+  "releases": [
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 15,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "P1C02-00",
+     "rate": 0.0072
+    }
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 14,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": "HW07",
+     "dtc": "P1A40-00",
+     "rate": 0.054
+    }
+   },
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 19,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ },
+ {
+  "id": "fleet-dev-mixed-02",
+  "kind": "mixed",
+  "seed": 216995296,
+  "releases": [
+   {
+    "ecu": "ZCU_FRONT",
+    "version": "3.2.0",
+    "start_day": 12,
+    "defect": {
+     "when": "always",
+     "hw": null,
+     "dtc": "B1A23-16",
+     "rate": 0.0117
+    }
+   },
+   {
+    "ecu": "THERMAL",
+    "version": "2.1.0",
+    "start_day": 13,
+    "defect": {
+     "when": "cold",
+     "below_c": -10,
+     "hw": null,
+     "dtc": "P1C02-00",
+     "rate": 0.028
+    }
+   },
+   {
+    "ecu": "BMS",
+    "version": "1.9.0",
+    "start_day": 8,
+    "defect": null
+   }
+  ],
+  "forced_snaps": []
+ }
+]

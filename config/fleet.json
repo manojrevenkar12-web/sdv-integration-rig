@@ -1,0 +1,160 @@
+{
+  "_comment": "Synthetic fleet and the monitor's decision settings. Rates are per vehicle-day. DTCs other than U0100 and U3000 are rig-defined codes in the manufacturer-specific ranges.",
+  "world": {
+    "days": 45,
+    "vehicles": 8000,
+    "regions": {
+      "nordic": {
+        "share": 0.1,
+        "mean_c": -9,
+        "swing_c": 6
+      },
+      "central_eu": {
+        "share": 0.4,
+        "mean_c": 1,
+        "swing_c": 5
+      },
+      "na_north": {
+        "share": 0.2,
+        "mean_c": -5,
+        "swing_c": 7
+      },
+      "na_south": {
+        "share": 0.3,
+        "mean_c": 12,
+        "swing_c": 5
+      }
+    },
+    "vehicle_noise_c": 3.0,
+    "cold_snaps_per_region": [
+      0,
+      2
+    ],
+    "cold_snap_days": [
+      3,
+      8
+    ],
+    "cold_snap_drop_c": [
+      8,
+      16
+    ],
+    "hardware": {
+      "ZCU_FRONT": {
+        "HW03": 0.6,
+        "HW04": 0.4
+      },
+      "ZCU_REAR": {
+        "HW03": 1.0
+      },
+      "BMS": {
+        "HW07": 0.7,
+        "HW08": 0.3
+      },
+      "THERMAL": {
+        "HW02": 1.0
+      }
+    },
+    "software": {
+      "ZCU_FRONT": "3.1.0",
+      "ZCU_REAR": "3.1.0",
+      "BMS": "1.8.2",
+      "THERMAL": "2.0.4"
+    },
+    "background_dtcs": {
+      "ZCU_FRONT": [
+        {
+          "dtc": "B1A23-16",
+          "rate": 0.0015,
+          "cold_slope": 0.3
+        },
+        {
+          "dtc": "U0100-00",
+          "rate": 0.0004,
+          "cold_slope": 0.0
+        }
+      ],
+      "ZCU_REAR": [
+        {
+          "dtc": "B1B10-11",
+          "rate": 0.001,
+          "cold_slope": 0.2
+        },
+        {
+          "dtc": "U0100-00",
+          "rate": 0.0004,
+          "cold_slope": 0.0
+        }
+      ],
+      "BMS": [
+        {
+          "dtc": "P1A40-00",
+          "rate": 0.003,
+          "cold_slope": 1.5
+        },
+        {
+          "dtc": "U0100-00",
+          "rate": 0.0004,
+          "cold_slope": 0.0
+        }
+      ],
+      "THERMAL": [
+        {
+          "dtc": "P1C02-00",
+          "rate": 0.002,
+          "cold_slope": 1.0
+        },
+        {
+          "dtc": "U0100-00",
+          "rate": 0.0004,
+          "cold_slope": 0.0
+        }
+      ]
+    }
+  },
+  "rollout": {
+    "wave_fractions": [
+      0.02,
+      0.1,
+      0.5,
+      1.0
+    ],
+    "wave_offsets_days": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "early_pool_region_weights": {
+      "nordic": 0.5,
+      "central_eu": 0.25,
+      "na_north": 0.15,
+      "na_south": 0.1
+    }
+  },
+  "monitor": {
+    "temperature_bands_c": [
+      -25,
+      -20,
+      -15,
+      -10,
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "z_halt": 4.0,
+    "min_rate_ratio": 1.5,
+    "min_exposed_events": 5,
+    "localize_min_events": 3,
+    "localize_z": 2.0,
+    "before_after_window_days": 7
+  },
+  "owners": {
+    "ZCU_FRONT": "Zonal Front - Body & Lighting",
+    "ZCU_REAR": "Zonal Rear - Body & Closures",
+    "BMS": "Propulsion - Battery Management",
+    "THERMAL": "Propulsion - Thermal Management"
+  }
+}

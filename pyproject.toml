@@ -1,0 +1,17 @@
+[project]
+name = "sdv-integration-rig"
+version = "0.1.0"
+description = "A simulated zonal vehicle for system integration: ISO-TP, UDS and DoIP from the standards, fault-injected flashing, captures checked by independent decoders, and fleet monitoring that halts bad rollouts."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Manoj Kumar Prakash" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "scapy==2.6.1"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = ["slow: runs whole scenario sets (deselect with -m 'not slow')"]

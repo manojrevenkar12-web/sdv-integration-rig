@@ -1,0 +1,3690 @@
+[
+ {
+  "id": "flash-heldout-clean-01",
+  "family": "clean",
+  "seed": 220410946,
+  "ecu": "BMS",
+  "image": {
+   "version": "7.8.16",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-02",
+  "family": "clean",
+  "seed": 515254513,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.9.14",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-03",
+  "family": "clean",
+  "seed": 965626409,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.4.3",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-04",
+  "family": "clean",
+  "seed": 540120286,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.3.12",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-05",
+  "family": "clean",
+  "seed": 163895737,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.8.20",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-06",
+  "family": "clean",
+  "seed": 302555436,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.4.14",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-07",
+  "family": "clean",
+  "seed": 990145697,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "2.5.11",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-08",
+  "family": "clean",
+  "seed": 1070424140,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.9.17",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-09",
+  "family": "clean",
+  "seed": 555432531,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.6.16",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-10",
+  "family": "clean",
+  "seed": 54494846,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.8.16",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-11",
+  "family": "clean",
+  "seed": 220281103,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.0.16",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-clean-12",
+  "family": "clean",
+  "seed": 491617564,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.2.15",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-01",
+  "family": "interference",
+  "seed": 539032311,
+  "ecu": "BMS",
+  "image": {
+   "version": "9.7.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.035
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-02",
+  "family": "interference",
+  "seed": 434932740,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.6.13",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.067
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-03",
+  "family": "interference",
+  "seed": 984035962,
+  "ecu": "BMS",
+  "image": {
+   "version": "2.2.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.075
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-04",
+  "family": "interference",
+  "seed": 1002136362,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.4.15",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.063
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-05",
+  "family": "interference",
+  "seed": 622918770,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.8.1",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.039
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-06",
+  "family": "interference",
+  "seed": 972639797,
+  "ecu": "BMS",
+  "image": {
+   "version": "9.8.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.078
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-07",
+  "family": "interference",
+  "seed": 794845488,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.4.15",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.02
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-08",
+  "family": "interference",
+  "seed": 197930627,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "4.7.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.039
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-09",
+  "family": "interference",
+  "seed": 95904633,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.3.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.077
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-10",
+  "family": "interference",
+  "seed": 1056538156,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "4.0.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.046
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-11",
+  "family": "interference",
+  "seed": 624230873,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "4.9.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.036
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-interference-12",
+  "family": "interference",
+  "seed": 884847333,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.9.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.066
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-01",
+  "family": "bus_off_burst",
+  "seed": 836118410,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.0.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 18,
+    "at": {
+     "step": "transfer",
+     "block": 27
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-02",
+  "family": "bus_off_burst",
+  "seed": 1022254656,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.0.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 82,
+    "at": {
+     "step": "transfer",
+     "block": 29
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 88,
+    "at": {
+     "step": "transfer",
+     "block": 8
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 132,
+    "at": {
+     "step": "transfer",
+     "block": 30
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-03",
+  "family": "bus_off_burst",
+  "seed": 444498299,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.9.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 91,
+    "at": {
+     "step": "transfer",
+     "block": 15
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 158,
+    "at": {
+     "step": "transfer",
+     "block": 8
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 178,
+    "at": {
+     "step": "transfer",
+     "block": 23
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-04",
+  "family": "bus_off_burst",
+  "seed": 372296166,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.0.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 144,
+    "at": {
+     "step": "transfer",
+     "block": 4
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 120,
+    "at": {
+     "step": "transfer",
+     "block": 42
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 53,
+    "at": {
+     "step": "transfer",
+     "block": 31
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-05",
+  "family": "bus_off_burst",
+  "seed": 295755231,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.8.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 221,
+    "at": {
+     "step": "transfer",
+     "block": 12
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 104,
+    "at": {
+     "step": "transfer",
+     "block": 18
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 113,
+    "at": {
+     "step": "transfer",
+     "block": 35
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-06",
+  "family": "bus_off_burst",
+  "seed": 402006330,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.6.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 72,
+    "at": {
+     "step": "transfer",
+     "block": 15
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-07",
+  "family": "bus_off_burst",
+  "seed": 380023600,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.4.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 128,
+    "at": {
+     "step": "transfer",
+     "block": 15
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 35,
+    "at": {
+     "step": "transfer",
+     "block": 17
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 208,
+    "at": {
+     "step": "transfer",
+     "block": 17
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-08",
+  "family": "bus_off_burst",
+  "seed": 10535185,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "3.3.7",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 170,
+    "at": {
+     "step": "transfer",
+     "block": 22
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 109,
+    "at": {
+     "step": "transfer",
+     "block": 35
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-09",
+  "family": "bus_off_burst",
+  "seed": 755273707,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "2.5.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 151,
+    "at": {
+     "step": "transfer",
+     "block": 26
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 142,
+    "at": {
+     "step": "transfer",
+     "block": 7
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 33,
+    "at": {
+     "step": "transfer",
+     "block": 20
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-10",
+  "family": "bus_off_burst",
+  "seed": 575741874,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.9.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 30,
+    "at": {
+     "step": "transfer",
+     "block": 17
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-11",
+  "family": "bus_off_burst",
+  "seed": 129764089,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.2.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 210,
+    "at": {
+     "step": "transfer",
+     "block": 12
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 170,
+    "at": {
+     "step": "transfer",
+     "block": 41
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 32,
+    "at": {
+     "step": "transfer",
+     "block": 33
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-bus_off_burst-12",
+  "family": "bus_off_burst",
+  "seed": 624995371,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "6.9.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "disturbance",
+    "duration_ms": 71,
+    "at": {
+     "step": "transfer",
+     "block": 17
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-01",
+  "family": "power_cut_transfer",
+  "seed": 890192646,
+  "ecu": "BMS",
+  "image": {
+   "version": "2.6.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 434,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-02",
+  "family": "power_cut_transfer",
+  "seed": 264184121,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.0.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3009,
+    "at": {
+     "step": "transfer",
+     "block": 7
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-03",
+  "family": "power_cut_transfer",
+  "seed": 81627690,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.7.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1494,
+    "at": {
+     "step": "transfer",
+     "block": 26
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-04",
+  "family": "power_cut_transfer",
+  "seed": 803474298,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "9.6.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2253,
+    "at": {
+     "step": "transfer",
+     "block": 28
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-05",
+  "family": "power_cut_transfer",
+  "seed": 123761009,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.4.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3797,
+    "at": {
+     "step": "transfer",
+     "block": 28
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-06",
+  "family": "power_cut_transfer",
+  "seed": 262669964,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.5.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3345,
+    "at": {
+     "step": "transfer",
+     "block": 20
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-07",
+  "family": "power_cut_transfer",
+  "seed": 735478462,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.9.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2497,
+    "at": {
+     "step": "transfer",
+     "block": 7
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-08",
+  "family": "power_cut_transfer",
+  "seed": 263464488,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.2.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 352,
+    "at": {
+     "step": "transfer",
+     "block": 8
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-09",
+  "family": "power_cut_transfer",
+  "seed": 649057976,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.9.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1939,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-10",
+  "family": "power_cut_transfer",
+  "seed": 809992536,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.6.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3380,
+    "at": {
+     "step": "transfer",
+     "block": 8
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-11",
+  "family": "power_cut_transfer",
+  "seed": 61025306,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "5.2.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3137,
+    "at": {
+     "step": "transfer",
+     "block": 22
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_transfer-12",
+  "family": "power_cut_transfer",
+  "seed": 50169514,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "6.2.7",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1333,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-01",
+  "family": "power_cut_erase",
+  "seed": 297764592,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.4.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2767,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-02",
+  "family": "power_cut_erase",
+  "seed": 569561605,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.8.1",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2792,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-03",
+  "family": "power_cut_erase",
+  "seed": 521422992,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "2.0.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 438,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-04",
+  "family": "power_cut_erase",
+  "seed": 499317279,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.6.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3595,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-05",
+  "family": "power_cut_erase",
+  "seed": 771180475,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.3.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2809,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-06",
+  "family": "power_cut_erase",
+  "seed": 403517065,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.9.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2772,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-07",
+  "family": "power_cut_erase",
+  "seed": 761137532,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "4.7.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3620,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-08",
+  "family": "power_cut_erase",
+  "seed": 642175361,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "2.2.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2439,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-09",
+  "family": "power_cut_erase",
+  "seed": 466267197,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "4.1.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1456,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-10",
+  "family": "power_cut_erase",
+  "seed": 339396780,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.6.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 629,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-11",
+  "family": "power_cut_erase",
+  "seed": 561446868,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.6.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 370,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_erase-12",
+  "family": "power_cut_erase",
+  "seed": 613275787,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.4.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 748,
+    "at": {
+     "step": "erase"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-01",
+  "family": "power_cut_exit",
+  "seed": 1030818138,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "5.0.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1931,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-02",
+  "family": "power_cut_exit",
+  "seed": 310838795,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "2.2.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 316,
+    "at": {
+     "step": "transfer-exit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-03",
+  "family": "power_cut_exit",
+  "seed": 649933314,
+  "ecu": "BMS",
+  "image": {
+   "version": "7.1.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2379,
+    "at": {
+     "step": "transfer-exit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-04",
+  "family": "power_cut_exit",
+  "seed": 1040594978,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.1.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3779,
+    "at": {
+     "step": "activate"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-05",
+  "family": "power_cut_exit",
+  "seed": 647456178,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.4.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 681,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-06",
+  "family": "power_cut_exit",
+  "seed": 530486111,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.1.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1669,
+    "at": {
+     "step": "activate"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-07",
+  "family": "power_cut_exit",
+  "seed": 188692717,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.1.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2226,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-08",
+  "family": "power_cut_exit",
+  "seed": 928994173,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.2.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2500,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-09",
+  "family": "power_cut_exit",
+  "seed": 379553273,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.6.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 3502,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-10",
+  "family": "power_cut_exit",
+  "seed": 819539076,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.5.13",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 832,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-11",
+  "family": "power_cut_exit",
+  "seed": 253072538,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.4.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1291,
+    "at": {
+     "step": "check-memory"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_exit-12",
+  "family": "power_cut_exit",
+  "seed": 575905490,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "4.8.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1558,
+    "at": {
+     "step": "transfer-exit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-01",
+  "family": "power_cut_after_reset",
+  "seed": 983684848,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.4.18",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1843,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-02",
+  "family": "power_cut_after_reset",
+  "seed": 204024030,
+  "ecu": "BMS",
+  "image": {
+   "version": "7.6.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2226,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-03",
+  "family": "power_cut_after_reset",
+  "seed": 858485532,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.5.1",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 908,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-04",
+  "family": "power_cut_after_reset",
+  "seed": 890394977,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "6.2.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2178,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-05",
+  "family": "power_cut_after_reset",
+  "seed": 259502261,
+  "ecu": "BMS",
+  "image": {
+   "version": "2.3.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1300,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-06",
+  "family": "power_cut_after_reset",
+  "seed": 594658493,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.7.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2781,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-07",
+  "family": "power_cut_after_reset",
+  "seed": 205283423,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.8.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1551,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-08",
+  "family": "power_cut_after_reset",
+  "seed": 664534781,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "5.9.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2524,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-09",
+  "family": "power_cut_after_reset",
+  "seed": 900946028,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "3.0.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 958,
+    "at": {
+     "step": "self-test"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-10",
+  "family": "power_cut_after_reset",
+  "seed": 682509587,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.5.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2164,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-11",
+  "family": "power_cut_after_reset",
+  "seed": 1052277232,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.4.1",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 289,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-power_cut_after_reset-12",
+  "family": "power_cut_after_reset",
+  "seed": 789289854,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "6.7.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 2298,
+    "at": {
+     "step": "commit"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-01",
+  "family": "brownout_dip",
+  "seed": 882312242,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.9.1",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11988,
+    "duration_ms": 5349,
+    "at": {
+     "step": "transfer",
+     "block": 5
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-02",
+  "family": "brownout_dip",
+  "seed": 729305330,
+  "ecu": "BMS",
+  "image": {
+   "version": "7.7.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11159,
+    "duration_ms": 4904,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-03",
+  "family": "brownout_dip",
+  "seed": 822118066,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "6.8.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12247,
+    "duration_ms": 2059,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-04",
+  "family": "brownout_dip",
+  "seed": 921244882,
+  "ecu": "BMS",
+  "image": {
+   "version": "9.3.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12052,
+    "duration_ms": 2030,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-05",
+  "family": "brownout_dip",
+  "seed": 699565553,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.2.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12090,
+    "duration_ms": 5340,
+    "at": {
+     "step": "transfer",
+     "block": 24
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-06",
+  "family": "brownout_dip",
+  "seed": 328796264,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.9.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11268,
+    "duration_ms": 5681,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-07",
+  "family": "brownout_dip",
+  "seed": 384370205,
+  "ecu": "BMS",
+  "image": {
+   "version": "2.4.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12106,
+    "duration_ms": 5976,
+    "at": {
+     "step": "transfer",
+     "block": 9
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-08",
+  "family": "brownout_dip",
+  "seed": 400660457,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "4.7.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12392,
+    "duration_ms": 1560,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-09",
+  "family": "brownout_dip",
+  "seed": 645637042,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.8.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12111,
+    "duration_ms": 1053,
+    "at": {
+     "step": "transfer",
+     "block": 8
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-10",
+  "family": "brownout_dip",
+  "seed": 312772153,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.2.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11964,
+    "duration_ms": 361,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-11",
+  "family": "brownout_dip",
+  "seed": 552392286,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.5.18",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11335,
+    "duration_ms": 4422,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_dip-12",
+  "family": "brownout_dip",
+  "seed": 428284859,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "3.6.13",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11493,
+    "duration_ms": 2140,
+    "at": {
+     "step": "preconditions"
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-01",
+  "family": "brownout_persistent",
+  "seed": 906180146,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "5.5.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11366
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-02",
+  "family": "brownout_persistent",
+  "seed": 945916370,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.3.9",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11644
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-03",
+  "family": "brownout_persistent",
+  "seed": 248792117,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.3.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 10661
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-04",
+  "family": "brownout_persistent",
+  "seed": 437158589,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "4.1.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 10887
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-05",
+  "family": "brownout_persistent",
+  "seed": 577096403,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "2.8.4",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12013
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-06",
+  "family": "brownout_persistent",
+  "seed": 988280767,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.0.15",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12221
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-07",
+  "family": "brownout_persistent",
+  "seed": 309220890,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.2.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 10955
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-08",
+  "family": "brownout_persistent",
+  "seed": 103584191,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.6.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11168
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-09",
+  "family": "brownout_persistent",
+  "seed": 742905053,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "3.7.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12191
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-10",
+  "family": "brownout_persistent",
+  "seed": 172963765,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.4.1",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 10585
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-11",
+  "family": "brownout_persistent",
+  "seed": 829431531,
+  "ecu": "BMS",
+  "image": {
+   "version": "9.9.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 12138
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-brownout_persistent-12",
+  "family": "brownout_persistent",
+  "seed": 328786815,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.8.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "brownout",
+    "mv": 11152
+   }
+  ],
+  "expect": "refused"
+ },
+ {
+  "id": "flash-heldout-harness_fault-01",
+  "family": "harness_fault",
+  "seed": 197265071,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "2.1.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 8861,
+    "at": {
+     "step": "transfer",
+     "block": 6
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-02",
+  "family": "harness_fault",
+  "seed": 256999516,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "2.0.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 2610,
+    "at": {
+     "step": "transfer",
+     "block": 22
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-03",
+  "family": "harness_fault",
+  "seed": 1006457380,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.3.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 6654,
+    "at": {
+     "step": "transfer",
+     "block": 16
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-04",
+  "family": "harness_fault",
+  "seed": 1050020982,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.6.1",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 3119,
+    "at": {
+     "step": "transfer",
+     "block": 8
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-05",
+  "family": "harness_fault",
+  "seed": 1022869517,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "5.1.18",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 6352,
+    "at": {
+     "step": "transfer",
+     "block": 19
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-06",
+  "family": "harness_fault",
+  "seed": 826182012,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "2.7.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 657,
+    "at": {
+     "step": "transfer",
+     "block": 24
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-07",
+  "family": "harness_fault",
+  "seed": 674044043,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "4.4.7",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 7173,
+    "at": {
+     "step": "transfer",
+     "block": 9
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-08",
+  "family": "harness_fault",
+  "seed": 357255917,
+  "ecu": "BMS",
+  "image": {
+   "version": "7.9.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 2101,
+    "at": {
+     "step": "transfer",
+     "block": 34
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-09",
+  "family": "harness_fault",
+  "seed": 365206949,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.9.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 6742,
+    "at": {
+     "step": "transfer",
+     "block": 30
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-10",
+  "family": "harness_fault",
+  "seed": 12393836,
+  "ecu": "BMS",
+  "image": {
+   "version": "3.6.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 3321,
+    "at": {
+     "step": "transfer",
+     "block": 16
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-11",
+  "family": "harness_fault",
+  "seed": 572066387,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.2.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 1485,
+    "at": {
+     "step": "transfer",
+     "block": 24
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault-12",
+  "family": "harness_fault",
+  "seed": 248440985,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "4.0.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 682,
+    "at": {
+     "step": "transfer",
+     "block": 29
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-01",
+  "family": "harness_fault_long",
+  "seed": 74438435,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.8.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 55776,
+    "at": {
+     "step": "transfer",
+     "block": 13
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-02",
+  "family": "harness_fault_long",
+  "seed": 140678887,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.1.5",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 46704,
+    "at": {
+     "step": "transfer",
+     "block": 18
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-03",
+  "family": "harness_fault_long",
+  "seed": 93640513,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.9.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 48498,
+    "at": {
+     "step": "transfer",
+     "block": 31
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-04",
+  "family": "harness_fault_long",
+  "seed": 511076528,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.8.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 41744,
+    "at": {
+     "step": "transfer",
+     "block": 32
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-05",
+  "family": "harness_fault_long",
+  "seed": 996482264,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.8.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 47939,
+    "at": {
+     "step": "transfer",
+     "block": 6
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-06",
+  "family": "harness_fault_long",
+  "seed": 191928841,
+  "ecu": "BMS",
+  "image": {
+   "version": "2.6.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 45848,
+    "at": {
+     "step": "transfer",
+     "block": 29
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-07",
+  "family": "harness_fault_long",
+  "seed": 428129539,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "5.2.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 51045,
+    "at": {
+     "step": "transfer",
+     "block": 17
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-08",
+  "family": "harness_fault_long",
+  "seed": 198461163,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "6.2.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 51283,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-09",
+  "family": "harness_fault_long",
+  "seed": 522285468,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.9.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 44881,
+    "at": {
+     "step": "transfer",
+     "block": 31
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-10",
+  "family": "harness_fault_long",
+  "seed": 247755561,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "4.7.17",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 40049,
+    "at": {
+     "step": "transfer",
+     "block": 9
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-11",
+  "family": "harness_fault_long",
+  "seed": 898999523,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.7.20",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 58571,
+    "at": {
+     "step": "transfer",
+     "block": 22
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-harness_fault_long-12",
+  "family": "harness_fault_long",
+  "seed": 45124409,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.1.18",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "partition",
+    "duration_ms": 47798,
+    "at": {
+     "step": "transfer",
+     "block": 17
+    }
+   }
+  ],
+  "expect": "failed",
+  "allowed_dtcs": [
+   "*:U0100-00"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-01",
+  "family": "bad_build",
+  "seed": 385773399,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.3.9",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-02",
+  "family": "bad_build",
+  "seed": 983941481,
+  "ecu": "BMS",
+  "image": {
+   "version": "2.5.5",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-03",
+  "family": "bad_build",
+  "seed": 1026749042,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.7.5",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-04",
+  "family": "bad_build",
+  "seed": 668049159,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.0.19",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-05",
+  "family": "bad_build",
+  "seed": 634559213,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "6.0.14",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-06",
+  "family": "bad_build",
+  "seed": 260891854,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.0.14",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-07",
+  "family": "bad_build",
+  "seed": 827223495,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.7.2",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-08",
+  "family": "bad_build",
+  "seed": 957665137,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.4.8",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-09",
+  "family": "bad_build",
+  "seed": 361103910,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.4.10",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-10",
+  "family": "bad_build",
+  "seed": 866232686,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.3.9",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-11",
+  "family": "bad_build",
+  "seed": 827129398,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "4.1.7",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-bad_build-12",
+  "family": "bad_build",
+  "seed": 650429009,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.3.19",
+   "healthy": false
+  },
+  "faults": [],
+  "expect": "rolled_back",
+  "allowed_dtcs": [
+   "U3000-49"
+  ]
+ },
+ {
+  "id": "flash-heldout-combined-01",
+  "family": "combined",
+  "seed": 520904772,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "6.5.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.023
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 353,
+    "at": {
+     "step": "transfer",
+     "block": 6
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 55,
+    "at": {
+     "step": "transfer",
+     "block": 10
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-02",
+  "family": "combined",
+  "seed": 955262599,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.9.4",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.027
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 2989,
+    "at": {
+     "step": "transfer",
+     "block": 13
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 20,
+    "at": {
+     "step": "transfer",
+     "block": 20
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-03",
+  "family": "combined",
+  "seed": 724646339,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "2.9.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.015
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 1895,
+    "at": {
+     "step": "transfer",
+     "block": 36
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 62,
+    "at": {
+     "step": "transfer",
+     "block": 35
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-04",
+  "family": "combined",
+  "seed": 473632190,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.5.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.02
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 1958,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 104,
+    "at": {
+     "step": "transfer",
+     "block": 24
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-05",
+  "family": "combined",
+  "seed": 229760422,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.5.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.013
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 2209,
+    "at": {
+     "step": "transfer",
+     "block": 8
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 105,
+    "at": {
+     "step": "transfer",
+     "block": 16
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-06",
+  "family": "combined",
+  "seed": 803146580,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.8.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.024
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 615,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 34,
+    "at": {
+     "step": "transfer",
+     "block": 7
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-07",
+  "family": "combined",
+  "seed": 745197691,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.7.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.023
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 2765,
+    "at": {
+     "step": "transfer",
+     "block": 21
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 30,
+    "at": {
+     "step": "transfer",
+     "block": 14
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-08",
+  "family": "combined",
+  "seed": 207689618,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "7.4.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.007
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 1599,
+    "at": {
+     "step": "transfer",
+     "block": 29
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 43,
+    "at": {
+     "step": "transfer",
+     "block": 15
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-09",
+  "family": "combined",
+  "seed": 1043060599,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "3.1.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.026
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 710,
+    "at": {
+     "step": "transfer",
+     "block": 11
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 27,
+    "at": {
+     "step": "transfer",
+     "block": 12
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-10",
+  "family": "combined",
+  "seed": 213791646,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "4.7.14",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.04
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 1935,
+    "at": {
+     "step": "transfer",
+     "block": 30
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 38,
+    "at": {
+     "step": "transfer",
+     "block": 3
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-11",
+  "family": "combined",
+  "seed": 948742033,
+  "ecu": "BMS",
+  "image": {
+   "version": "9.6.2",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.007
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 2147,
+    "at": {
+     "step": "transfer",
+     "block": 32
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 94,
+    "at": {
+     "step": "transfer",
+     "block": 7
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-combined-12",
+  "family": "combined",
+  "seed": 147505313,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.2.13",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "error_frames",
+    "probability": 0.03
+   },
+   {
+    "kind": "power_cut",
+    "off_ms": 2346,
+    "at": {
+     "step": "transfer",
+     "block": 17
+    }
+   },
+   {
+    "kind": "disturbance",
+    "duration_ms": 68,
+    "at": {
+     "step": "transfer",
+     "block": 28
+    }
+   }
+  ],
+  "expect": "updated"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-01",
+  "family": "flaky_supply",
+  "seed": 304181140,
+  "ecu": "BMS",
+  "image": {
+   "version": "7.2.0",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1441,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 39
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-02",
+  "family": "flaky_supply",
+  "seed": 486255582,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "6.6.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1740,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 24
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-03",
+  "family": "flaky_supply",
+  "seed": 567391082,
+  "ecu": "BMS",
+  "image": {
+   "version": "8.1.18",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1074,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 21
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-04",
+  "family": "flaky_supply",
+  "seed": 389297855,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "5.9.16",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1058,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 34
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-05",
+  "family": "flaky_supply",
+  "seed": 540616089,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "2.8.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1142,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 34
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-06",
+  "family": "flaky_supply",
+  "seed": 948695126,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.4.6",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 932,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 11
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-07",
+  "family": "flaky_supply",
+  "seed": 529985387,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "6.4.3",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 605,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-08",
+  "family": "flaky_supply",
+  "seed": 871889654,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "7.1.10",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1453,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 28
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-09",
+  "family": "flaky_supply",
+  "seed": 924674212,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "8.1.11",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1592,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 25
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-10",
+  "family": "flaky_supply",
+  "seed": 769361406,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "7.9.12",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1757,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-11",
+  "family": "flaky_supply",
+  "seed": 1030372590,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "8.5.8",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 937,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 1
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-flaky_supply-12",
+  "family": "flaky_supply",
+  "seed": 49692362,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "9.0.19",
+   "healthy": true
+  },
+  "faults": [
+   {
+    "kind": "power_cut",
+    "off_ms": 1652,
+    "repeat": true,
+    "at": {
+     "step": "transfer",
+     "block": 28
+    }
+   }
+  ],
+  "expect": "failed"
+ },
+ {
+  "id": "flash-heldout-wrong_key-01",
+  "family": "wrong_key",
+  "seed": 927187798,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "2.1.10",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "dd613171ea1bc8a94cceeb0d62495879"
+ },
+ {
+  "id": "flash-heldout-wrong_key-02",
+  "family": "wrong_key",
+  "seed": 123844637,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "2.3.6",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "b56fb0760cbae89f2d320bd13a97c922"
+ },
+ {
+  "id": "flash-heldout-wrong_key-03",
+  "family": "wrong_key",
+  "seed": 116738447,
+  "ecu": "ZCU_FRONT",
+  "image": {
+   "version": "9.1.19",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "6b1a35c7dfc9f54d1bac05b5207f149f"
+ },
+ {
+  "id": "flash-heldout-wrong_key-04",
+  "family": "wrong_key",
+  "seed": 154246123,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "3.1.3",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "635d846db87f2ab9bc2cc533dfd7dfe8"
+ },
+ {
+  "id": "flash-heldout-wrong_key-05",
+  "family": "wrong_key",
+  "seed": 51488777,
+  "ecu": "BMS",
+  "image": {
+   "version": "4.7.17",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "8e86e4835efa4b80ec192b6768b131ad"
+ },
+ {
+  "id": "flash-heldout-wrong_key-06",
+  "family": "wrong_key",
+  "seed": 669222166,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "5.0.13",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "fc2fc72fee429e47a3bb2b8f4479ccc5"
+ },
+ {
+  "id": "flash-heldout-wrong_key-07",
+  "family": "wrong_key",
+  "seed": 973646178,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "8.0.2",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "70eb55717a5d8682d242a6c7699f48c0"
+ },
+ {
+  "id": "flash-heldout-wrong_key-08",
+  "family": "wrong_key",
+  "seed": 276552775,
+  "ecu": "THERMAL",
+  "image": {
+   "version": "2.4.3",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "bd889ea5f69e75a3450da7343112cdd6"
+ },
+ {
+  "id": "flash-heldout-wrong_key-09",
+  "family": "wrong_key",
+  "seed": 341940692,
+  "ecu": "ZCU_REAR",
+  "image": {
+   "version": "4.3.10",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "07f2264c4b8c1753b091d372cd242df9"
+ },
+ {
+  "id": "flash-heldout-wrong_key-10",
+  "family": "wrong_key",
+  "seed": 165484095,
+  "ecu": "BMS",
+  "image": {
+   "version": "5.7.12",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "db828663131f0462f797cd656412e585"
+ },
+ {
+  "id": "flash-heldout-wrong_key-11",
+  "family": "wrong_key",
+  "seed": 593671399,
+  "ecu": "BMS",
+  "image": {
+   "version": "7.9.2",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "4191a4535716359531c5c36d3806a896"
+ },
+ {
+  "id": "flash-heldout-wrong_key-12",
+  "family": "wrong_key",
+  "seed": 238847634,
+  "ecu": "BMS",
+  "image": {
+   "version": "6.8.17",
+   "healthy": true
+  },
+  "faults": [],
+  "expect": "failed",
+  "tester_secret": "76c79a3b39a3fe7cb090385c12ba7845"
+ }
+]

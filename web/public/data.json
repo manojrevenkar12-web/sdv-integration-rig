@@ -1,0 +1,1469 @@
+{
+ "flash": {
+  "scenarios": 180,
+  "summary": {
+   "baseline": {
+    "scenarios": 180,
+    "passed": 39,
+    "checks_failed": {
+     "outcome": 108,
+     "no_brick": 0,
+     "truthful_report": 12,
+     "no_stray_dtcs": 77,
+     "vehicle_restored": 57
+    },
+    "bricked": 0,
+    "families": {
+     "clean": {
+      "passed": 7,
+      "of": 12
+     },
+     "interference": {
+      "passed": 7,
+      "of": 12
+     },
+     "bus_off_burst": {
+      "passed": 0,
+      "of": 12
+     },
+     "power_cut_transfer": {
+      "passed": 0,
+      "of": 12
+     },
+     "power_cut_erase": {
+      "passed": 0,
+      "of": 12
+     },
+     "power_cut_exit": {
+      "passed": 0,
+      "of": 12
+     },
+     "power_cut_after_reset": {
+      "passed": 1,
+      "of": 12
+     },
+     "brownout_dip": {
+      "passed": 2,
+      "of": 12
+     },
+     "brownout_persistent": {
+      "passed": 0,
+      "of": 12
+     },
+     "harness_fault": {
+      "passed": 0,
+      "of": 12
+     },
+     "harness_fault_long": {
+      "passed": 12,
+      "of": 12
+     },
+     "bad_build": {
+      "passed": 0,
+      "of": 12
+     },
+     "combined": {
+      "passed": 0,
+      "of": 12
+     },
+     "flaky_supply": {
+      "passed": 10,
+      "of": 12
+     },
+     "wrong_key": {
+      "passed": 0,
+      "of": 12
+     }
+    },
+    "median_update_ms": 2072.9,
+    "block_retries": 0,
+    "restarts": 0
+   },
+   "robust": {
+    "scenarios": 180,
+    "passed": 180,
+    "checks_failed": {
+     "outcome": 0,
+     "no_brick": 0,
+     "truthful_report": 0,
+     "no_stray_dtcs": 0,
+     "vehicle_restored": 0
+    },
+    "bricked": 0,
+    "families": {
+     "clean": {
+      "passed": 12,
+      "of": 12
+     },
+     "interference": {
+      "passed": 12,
+      "of": 12
+     },
+     "bus_off_burst": {
+      "passed": 12,
+      "of": 12
+     },
+     "power_cut_transfer": {
+      "passed": 12,
+      "of": 12
+     },
+     "power_cut_erase": {
+      "passed": 12,
+      "of": 12
+     },
+     "power_cut_exit": {
+      "passed": 12,
+      "of": 12
+     },
+     "power_cut_after_reset": {
+      "passed": 12,
+      "of": 12
+     },
+     "brownout_dip": {
+      "passed": 12,
+      "of": 12
+     },
+     "brownout_persistent": {
+      "passed": 12,
+      "of": 12
+     },
+     "harness_fault": {
+      "passed": 12,
+      "of": 12
+     },
+     "harness_fault_long": {
+      "passed": 12,
+      "of": 12
+     },
+     "bad_build": {
+      "passed": 12,
+      "of": 12
+     },
+     "combined": {
+      "passed": 12,
+      "of": 12
+     },
+     "flaky_supply": {
+      "passed": 12,
+      "of": 12
+     },
+     "wrong_key": {
+      "passed": 12,
+      "of": 12
+     }
+    },
+    "median_update_ms": 5270.7,
+    "block_retries": 219,
+    "restarts": 89
+   }
+  }
+ },
+ "fleet": {
+  "scenarios": 20,
+  "summary": {
+   "none": {
+    "defective_releases": 20,
+    "caught": 0,
+    "caught_right_dtc": 0,
+    "healthy_releases": 40,
+    "false_halts": 0,
+    "median_days_to_halt": null,
+    "median_fleet_share_on_bad_release": 1.0,
+    "median_bad_exposure_avoided": 0.0,
+    "localization_correct": null,
+    "localization_checked": null
+   },
+   "stratified": {
+    "defective_releases": 20,
+    "caught": 17,
+    "caught_right_dtc": 17,
+    "healthy_releases": 40,
+    "false_halts": 0,
+    "median_days_to_halt": 5,
+    "median_fleet_share_on_bad_release": 0.1,
+    "median_bad_exposure_avoided": 0.872,
+    "localization_correct": 16,
+    "localization_checked": 17
+   },
+   "pooled": {
+    "defective_releases": 20,
+    "caught": 20,
+    "caught_right_dtc": 20,
+    "healthy_releases": 40,
+    "false_halts": 10,
+    "median_days_to_halt": 3.0,
+    "median_fleet_share_on_bad_release": 0.02,
+    "median_bad_exposure_avoided": 0.97,
+    "localization_correct": null,
+    "localization_checked": null
+   },
+   "before_after": {
+    "defective_releases": 20,
+    "caught": 18,
+    "caught_right_dtc": 17,
+    "healthy_releases": 40,
+    "false_halts": 6,
+    "median_days_to_halt": 9.5,
+    "median_fleet_share_on_bad_release": 0.75,
+    "median_bad_exposure_avoided": 0.216,
+    "localization_correct": null,
+    "localization_checked": null
+   }
+  },
+  "triage": {
+   "tickets": 17,
+   "bench_repro_attempted": 6,
+   "bench_repro_confirmed": 6,
+   "soak_test_needed": 11
+  },
+  "tickets": [
+   {
+    "owner": "Propulsion - Battery Management",
+    "title": "BMS 1.9.0 raises P1A40-00 on HW07 at or below -10 \u00b0C",
+    "evidence": {
+     "z": 4.88,
+     "rate_ratio": 3.52,
+     "exposed_events": 29,
+     "expected_events": 14.5,
+     "day": 12
+    },
+    "localization": {
+     "hardware": [
+      "HW07"
+     ],
+     "ambient_at_or_below_c": -10
+    },
+    "runs": [
+     {
+      "hardware": "HW07",
+      "ambient_c": 20,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "room",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW07",
+      "ambient_c": -15,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [
+       "P1A40-00"
+      ],
+      "role": "field",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW08",
+      "ambient_c": -15,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "control-hw",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW07",
+      "ambient_c": -15,
+      "version": "1.8.2",
+      "flash": "not flashed",
+      "dtcs": [],
+      "role": "control-previous",
+      "as_expected": true
+     }
+    ],
+    "reproduced": true,
+    "next_step": "bench repro confirmed: keep the rollout halted, attach the repro to the fix, and add the field condition to the release gate",
+    "scenario": "fleet-heldout-cold_hw-01",
+    "defective": true
+   },
+   {
+    "owner": "Propulsion - Battery Management",
+    "title": "BMS 1.9.0 raises P1A40-00 on HW07 at or below -10 \u00b0C",
+    "evidence": {
+     "z": 4.09,
+     "rate_ratio": 2.01,
+     "exposed_events": 91,
+     "expected_events": 67.4,
+     "day": 21
+    },
+    "localization": {
+     "hardware": [
+      "HW07"
+     ],
+     "ambient_at_or_below_c": -10
+    },
+    "runs": [
+     {
+      "hardware": "HW07",
+      "ambient_c": 20,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "room",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW07",
+      "ambient_c": -15,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [
+       "P1A40-00"
+      ],
+      "role": "field",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW08",
+      "ambient_c": -15,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "control-hw",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW07",
+      "ambient_c": -15,
+      "version": "1.8.2",
+      "flash": "not flashed",
+      "dtcs": [],
+      "role": "control-previous",
+      "as_expected": true
+     }
+    ],
+    "reproduced": true,
+    "next_step": "bench repro confirmed: keep the rollout halted, attach the repro to the fix, and add the field condition to the release gate",
+    "scenario": "fleet-heldout-cold_hw-03",
+    "defective": true
+   },
+   {
+    "owner": "Zonal Front - Body & Lighting",
+    "title": "ZCU_FRONT 3.2.0 raises B1A23-16 on HW04 at or below -10 \u00b0C",
+    "evidence": {
+     "z": 4.49,
+     "rate_ratio": 23.47,
+     "exposed_events": 7,
+     "expected_events": 1.8,
+     "day": 17
+    },
+    "localization": {
+     "hardware": [
+      "HW04"
+     ],
+     "ambient_at_or_below_c": -10
+    },
+    "runs": [
+     {
+      "hardware": "HW04",
+      "ambient_c": 20,
+      "version": "3.2.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "room",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW04",
+      "ambient_c": -15,
+      "version": "3.2.0",
+      "flash": "updated",
+      "dtcs": [
+       "B1A23-16"
+      ],
+      "role": "field",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW03",
+      "ambient_c": -15,
+      "version": "3.2.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "control-hw",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW04",
+      "ambient_c": -15,
+      "version": "3.1.0",
+      "flash": "not flashed",
+      "dtcs": [],
+      "role": "control-previous",
+      "as_expected": true
+     }
+    ],
+    "reproduced": true,
+    "next_step": "bench repro confirmed: keep the rollout halted, attach the repro to the fix, and add the field condition to the release gate",
+    "scenario": "fleet-heldout-cold_hw-05",
+    "defective": true
+   },
+   {
+    "owner": "Propulsion - Battery Management",
+    "title": "BMS 1.9.0 raises P1A40-00 on HW07 at or below -10 \u00b0C",
+    "evidence": {
+     "z": 4.49,
+     "rate_ratio": 4.71,
+     "exposed_events": 17,
+     "expected_events": 6.7,
+     "day": 16
+    },
+    "localization": {
+     "hardware": [
+      "HW07"
+     ],
+     "ambient_at_or_below_c": -10
+    },
+    "runs": [
+     {
+      "hardware": "HW07",
+      "ambient_c": 20,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "room",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW07",
+      "ambient_c": -15,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [
+       "P1A40-00"
+      ],
+      "role": "field",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW08",
+      "ambient_c": -15,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "control-hw",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW07",
+      "ambient_c": -15,
+      "version": "1.8.2",
+      "flash": "not flashed",
+      "dtcs": [],
+      "role": "control-previous",
+      "as_expected": true
+     }
+    ],
+    "reproduced": true,
+    "next_step": "bench repro confirmed: keep the rollout halted, attach the repro to the fix, and add the field condition to the release gate",
+    "scenario": "fleet-heldout-mixed-02",
+    "defective": true
+   },
+   {
+    "owner": "Propulsion - Battery Management",
+    "title": "BMS 1.9.0 raises P1A40-00 on HW08 at or below -10 \u00b0C",
+    "evidence": {
+     "z": 5.96,
+     "rate_ratio": 2.55,
+     "exposed_events": 135,
+     "expected_events": 97.8,
+     "day": 18
+    },
+    "localization": {
+     "hardware": [
+      "HW08"
+     ],
+     "ambient_at_or_below_c": -10
+    },
+    "runs": [
+     {
+      "hardware": "HW08",
+      "ambient_c": 20,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "room",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW08",
+      "ambient_c": -15,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [
+       "P1A40-00"
+      ],
+      "role": "field",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW07",
+      "ambient_c": -15,
+      "version": "1.9.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "control-hw",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW08",
+      "ambient_c": -15,
+      "version": "1.8.2",
+      "flash": "not flashed",
+      "dtcs": [],
+      "role": "control-previous",
+      "as_expected": true
+     }
+    ],
+    "reproduced": true,
+    "next_step": "bench repro confirmed: keep the rollout halted, attach the repro to the fix, and add the field condition to the release gate",
+    "scenario": "fleet-heldout-mixed-03",
+    "defective": true
+   },
+   {
+    "owner": "Zonal Front - Body & Lighting",
+    "title": "ZCU_FRONT 3.2.0 raises B1A23-16 on HW04 at or below -10 \u00b0C",
+    "evidence": {
+     "z": 4.31,
+     "rate_ratio": 4.33,
+     "exposed_events": 27,
+     "expected_events": 15.6,
+     "day": 15
+    },
+    "localization": {
+     "hardware": [
+      "HW04"
+     ],
+     "ambient_at_or_below_c": -10
+    },
+    "runs": [
+     {
+      "hardware": "HW04",
+      "ambient_c": 20,
+      "version": "3.2.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "room",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW04",
+      "ambient_c": -15,
+      "version": "3.2.0",
+      "flash": "updated",
+      "dtcs": [
+       "B1A23-16"
+      ],
+      "role": "field",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW03",
+      "ambient_c": -15,
+      "version": "3.2.0",
+      "flash": "updated",
+      "dtcs": [],
+      "role": "control-hw",
+      "as_expected": true
+     },
+     {
+      "hardware": "HW04",
+      "ambient_c": -15,
+      "version": "3.1.0",
+      "flash": "not flashed",
+      "dtcs": [],
+      "role": "control-previous",
+      "as_expected": true
+     }
+    ],
+    "reproduced": true,
+    "next_step": "bench repro confirmed: keep the rollout halted, attach the repro to the fix, and add the field condition to the release gate",
+    "scenario": "fleet-heldout-mixed-04",
+    "defective": true
+   }
+  ]
+ },
+ "crosscheck": [
+  {
+   "ecu": "ZCU_FRONT",
+   "bus": "zone-front",
+   "fd": true,
+   "messages": 127,
+   "can_frames": 2889,
+   "files": {
+    "zone-front": "reports/captures/flash-ZCU_FRONT.zone-front.pcap",
+    "zone-rear": "reports/captures/flash-ZCU_FRONT.zone-rear.pcap",
+    "powertrain": "reports/captures/flash-ZCU_FRONT.powertrain.pcap",
+    "doip": "reports/captures/flash-ZCU_FRONT.doip.pcap"
+   },
+   "checks": [
+    {
+     "decoder": "doip/scapy",
+     "expected": 127,
+     "decoded": 127,
+     "equal": 127,
+     "agrees": true,
+     "first_difference": null
+    },
+    {
+     "decoder": "isotp/scapy",
+     "expected": 127,
+     "decoded": 127,
+     "equal": 127,
+     "agrees": true,
+     "first_difference": null,
+     "fd_escape_frames_checked_at_frame_level": 9,
+     "raw_equal_before_frame_check": 118
+    },
+    {
+     "decoder": "isotp/rust",
+     "expected": 127,
+     "decoded": 127,
+     "equal": 127,
+     "agrees": true,
+     "first_difference": null,
+     "decoder_errors": 0
+    }
+   ]
+  },
+  {
+   "ecu": "ZCU_REAR",
+   "bus": "zone-rear",
+   "fd": true,
+   "messages": 111,
+   "can_frames": 2323,
+   "files": "not kept",
+   "checks": [
+    {
+     "decoder": "doip/scapy",
+     "expected": 111,
+     "decoded": 111,
+     "equal": 111,
+     "agrees": true,
+     "first_difference": null
+    },
+    {
+     "decoder": "isotp/scapy",
+     "expected": 111,
+     "decoded": 111,
+     "equal": 111,
+     "agrees": true,
+     "first_difference": null,
+     "fd_escape_frames_checked_at_frame_level": 9,
+     "raw_equal_before_frame_check": 102
+    },
+    {
+     "decoder": "isotp/rust",
+     "expected": 111,
+     "decoded": 111,
+     "equal": 111,
+     "agrees": true,
+     "first_difference": null,
+     "decoder_errors": 0
+    }
+   ]
+  },
+  {
+   "ecu": "BMS",
+   "bus": "powertrain",
+   "fd": false,
+   "messages": 141,
+   "can_frames": 7681,
+   "files": {
+    "zone-front": "reports/captures/flash-BMS.zone-front.pcap",
+    "zone-rear": "reports/captures/flash-BMS.zone-rear.pcap",
+    "powertrain": "reports/captures/flash-BMS.powertrain.pcap",
+    "doip": "reports/captures/flash-BMS.doip.pcap"
+   },
+   "checks": [
+    {
+     "decoder": "doip/scapy",
+     "expected": 141,
+     "decoded": 141,
+     "equal": 141,
+     "agrees": true,
+     "first_difference": null
+    },
+    {
+     "decoder": "isotp/scapy",
+     "expected": 141,
+     "decoded": 141,
+     "equal": 141,
+     "agrees": true,
+     "first_difference": null,
+     "fd_escape_frames_checked_at_frame_level": 0,
+     "raw_equal_before_frame_check": 141
+    },
+    {
+     "decoder": "isotp/rust",
+     "expected": 141,
+     "decoded": 141,
+     "equal": 141,
+     "agrees": true,
+     "first_difference": null,
+     "decoder_errors": 0
+    }
+   ]
+  },
+  {
+   "ecu": "THERMAL",
+   "bus": "powertrain",
+   "fd": false,
+   "messages": 108,
+   "can_frames": 5152,
+   "files": "not kept",
+   "checks": [
+    {
+     "decoder": "doip/scapy",
+     "expected": 108,
+     "decoded": 108,
+     "equal": 108,
+     "agrees": true,
+     "first_difference": null
+    },
+    {
+     "decoder": "isotp/scapy",
+     "expected": 108,
+     "decoded": 108,
+     "equal": 108,
+     "agrees": true,
+     "first_difference": null,
+     "fd_escape_frames_checked_at_frame_level": 0,
+     "raw_equal_before_frame_check": 108
+    },
+    {
+     "decoder": "isotp/rust",
+     "expected": 108,
+     "decoded": 108,
+     "equal": 108,
+     "agrees": true,
+     "first_difference": null,
+     "decoder_errors": 0
+    }
+   ]
+  }
+ ],
+ "bench": {
+  "flash": {
+   "ZCU_FRONT": {
+    "image_kib": 160,
+    "bus": "zone-front",
+    "fd": true,
+    "simulated_ms": 2151.7,
+    "wall_ms": 39.2,
+    "throughput_kib_s": 74.4,
+    "frames": 2889
+   },
+   "ZCU_REAR": {
+    "image_kib": 128,
+    "bus": "zone-rear",
+    "fd": true,
+    "simulated_ms": 1834.5,
+    "wall_ms": 32.5,
+    "throughput_kib_s": 69.8,
+    "frames": 2323
+   },
+   "BMS": {
+    "image_kib": 48,
+    "bus": "powertrain",
+    "fd": false,
+    "simulated_ms": 2838.7,
+    "wall_ms": 89.4,
+    "throughput_kib_s": 16.9,
+    "frames": 7681
+   },
+   "THERMAL": {
+    "image_kib": 32,
+    "bus": "powertrain",
+    "fd": false,
+    "simulated_ms": 2083.7,
+    "wall_ms": 54.9,
+    "throughput_kib_s": 15.4,
+    "frames": 5152
+   }
+  },
+  "fleet": {
+   "vehicle_days": 360000,
+   "seconds": 2.08,
+   "vehicle_days_per_s": 173233
+  },
+  "python": "3.13.16"
+ },
+ "tests": {
+  "total": 99,
+  "passed": 99,
+  "failed": 0,
+  "skipped": 0,
+  "seconds": 27.9
+ },
+ "showcase": [
+  {
+   "scenario": {
+    "id": "flash-dev-power_cut_transfer-04",
+    "family": "power_cut_transfer",
+    "seed": 357668869,
+    "ecu": "BMS",
+    "image": {
+     "version": "3.2.5",
+     "healthy": true
+    },
+    "faults": [
+     {
+      "kind": "power_cut",
+      "off_ms": 1072,
+      "at": {
+       "step": "transfer",
+       "block": 35
+      }
+     }
+    ],
+    "expect": "updated"
+   },
+   "runs": {
+    "robust": {
+     "record": {
+      "scenario": "flash-dev-power_cut_transfer-04",
+      "family": "power_cut_transfer",
+      "flasher": "robust",
+      "ecu": "BMS",
+      "expect": "updated",
+      "passed": true,
+      "checks": {
+       "outcome": true,
+       "no_brick": true,
+       "truthful_report": true,
+       "no_stray_dtcs": true,
+       "vehicle_restored": true
+      },
+      "details": {
+       "faults_fired": "power_cut@1736.4ms"
+      },
+      "result": {
+       "ecu": "BMS",
+       "flasher": "robust",
+       "target_version": "3.2.5",
+       "previous_version": "1.8.2",
+       "outcome": "updated",
+       "failed_step": null,
+       "reason": null,
+       "running_version": "3.2.5",
+       "boot_state": 0,
+       "attempts": 2,
+       "blocks_sent": 83,
+       "block_retries": 1,
+       "duration_ms": 6218.2,
+       "steps": [
+        "identify",
+        "prepare-vehicle",
+        "programming-session",
+        "security-access",
+        "preconditions",
+        "erase",
+        "request-download",
+        "transfer",
+        "reconnect",
+        "programming-session",
+        "security-access",
+        "preconditions",
+        "erase",
+        "request-download",
+        "transfer",
+        "transfer-exit",
+        "check-memory",
+        "activate",
+        "reset",
+        "self-test",
+        "commit",
+        "restore-vehicle"
+       ],
+       "step_times_ms": [
+        50.0,
+        59.1,
+        89.1,
+        94.1,
+        100.5,
+        103.0,
+        225.5,
+        228.6,
+        3430.0,
+        3468.6,
+        3473.6,
+        3479.9,
+        3482.5,
+        3605.0,
+        3608.0,
+        5676.1,
+        5736.2,
+        5759.5,
+        5762.0,
+        6247.6,
+        6255.7,
+        6258.2
+       ],
+       "events": [
+        "3386.4 ms  block 36: no answer, repeating",
+        "3430.0 ms  attempt 1 interrupted: transfer: block 36 refused, TransferData: serviceNotSupportedInActiveSession (0x7f)"
+       ],
+       "ok": true
+      }
+     },
+     "frames_per_50ms": [
+      6,
+      29,
+      5,
+      0,
+      86,
+      185,
+      184,
+      181,
+      181,
+      184,
+      185,
+      185,
+      184,
+      185,
+      177,
+      184,
+      185,
+      185,
+      184,
+      185,
+      177,
+      184,
+      185,
+      185,
+      184,
+      185,
+      177,
+      184,
+      185,
+      185,
+      184,
+      185,
+      179,
+      182,
+      135,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      3,
+      2,
+      3,
+      2,
+      3,
+      53,
+      116,
+      24,
+      0,
+      0,
+      162,
+      180,
+      185,
+      184,
+      185,
+      184,
+      185,
+      177,
+      185,
+      184,
+      185,
+      184,
+      185,
+      177,
+      185,
+      184,
+      185,
+      184,
+      185,
+      177,
+      185,
+      184,
+      185,
+      184,
+      185,
+      179,
+      183,
+      184,
+      185,
+      184,
+      185,
+      185,
+      177,
+      184,
+      185,
+      184,
+      185,
+      185,
+      177,
+      184,
+      185,
+      96,
+      8,
+      5,
+      0,
+      1,
+      0,
+      0,
+      1,
+      2,
+      3,
+      2,
+      11,
+      17,
+      6,
+      4,
+      6,
+      4,
+      6,
+      4,
+      6,
+      4,
+      6
+     ],
+     "faults": "power_cut@1736.4ms"
+    },
+    "baseline": {
+     "record": {
+      "scenario": "flash-dev-power_cut_transfer-04",
+      "family": "power_cut_transfer",
+      "flasher": "baseline",
+      "ecu": "BMS",
+      "expect": "updated",
+      "passed": false,
+      "checks": {
+       "outcome": false,
+       "no_brick": true,
+       "truthful_report": true,
+       "no_stray_dtcs": false,
+       "vehicle_restored": true
+      },
+      "details": {
+       "outcome": "reported failed, expected updated: no response to TransferData to 0x1b01 within P2client",
+       "no_stray_dtcs": "THERMAL:U0100-00",
+       "faults_fired": "power_cut@1717.3ms"
+      },
+      "result": {
+       "ecu": "BMS",
+       "flasher": "baseline",
+       "target_version": "3.2.5",
+       "previous_version": "1.8.2",
+       "outcome": "failed",
+       "failed_step": "transfer",
+       "reason": "no response to TransferData to 0x1b01 within P2client",
+       "running_version": "unreachable",
+       "boot_state": null,
+       "attempts": 1,
+       "blocks_sent": 35,
+       "block_retries": 0,
+       "duration_ms": 1917.3,
+       "steps": [
+        "identify",
+        "programming-session",
+        "security-access",
+        "erase",
+        "request-download",
+        "transfer"
+       ],
+       "step_times_ms": [
+        50.0,
+        53.5,
+        58.6,
+        64.9,
+        187.4,
+        190.5
+       ],
+       "events": [],
+       "ok": false
+      }
+     },
+     "frames_per_50ms": [
+      6,
+      21,
+      3,
+      42,
+      185,
+      184,
+      186,
+      185,
+      184,
+      177,
+      185,
+      184,
+      185,
+      185,
+      184,
+      182,
+      181,
+      184,
+      185,
+      185,
+      184,
+      185,
+      179,
+      182,
+      185,
+      186,
+      184,
+      185,
+      184,
+      177,
+      185,
+      185,
+      184,
+      185,
+      63,
+      2,
+      3,
+      2,
+      3,
+      2,
+      3,
+      2,
+      3,
+      2,
+      3,
+      2,
+      3,
+      2,
+      3
+     ],
+     "faults": "power_cut@1717.3ms"
+    }
+   }
+  },
+  {
+   "scenario": {
+    "id": "flash-dev-bad_build-01",
+    "family": "bad_build",
+    "seed": 919341674,
+    "ecu": "BMS",
+    "image": {
+     "version": "4.0.6",
+     "healthy": false
+    },
+    "faults": [],
+    "expect": "rolled_back",
+    "allowed_dtcs": [
+     "U3000-49"
+    ]
+   },
+   "runs": {
+    "robust": {
+     "record": {
+      "scenario": "flash-dev-bad_build-01",
+      "family": "bad_build",
+      "flasher": "robust",
+      "ecu": "BMS",
+      "expect": "rolled_back",
+      "passed": true,
+      "checks": {
+       "outcome": true,
+       "no_brick": true,
+       "truthful_report": true,
+       "no_stray_dtcs": true,
+       "vehicle_restored": true
+      },
+      "details": {
+       "faults_fired": "none"
+      },
+      "result": {
+       "ecu": "BMS",
+       "flasher": "robust",
+       "target_version": "4.0.6",
+       "previous_version": "1.8.2",
+       "outcome": "rolled_back",
+       "failed_step": null,
+       "reason": "new image failed its self-test; previous image restored",
+       "running_version": "1.8.2",
+       "boot_state": 3,
+       "attempts": 1,
+       "blocks_sent": 48,
+       "block_retries": 0,
+       "duration_ms": 3321.8,
+       "steps": [
+        "identify",
+        "prepare-vehicle",
+        "programming-session",
+        "security-access",
+        "preconditions",
+        "erase",
+        "request-download",
+        "transfer",
+        "transfer-exit",
+        "check-memory",
+        "activate",
+        "reset",
+        "self-test",
+        "roll-back",
+        "restore-vehicle"
+       ],
+       "step_times_ms": [
+        50.0,
+        59.1,
+        89.1,
+        94.1,
+        100.5,
+        103.0,
+        225.5,
+        228.6,
+        2296.7,
+        2356.8,
+        2380.1,
+        2382.6,
+        2868.1,
+        2876.2,
+        3361.8
+       ],
+       "events": [
+        "2876.2 ms  self-test failed on 4.0.6; rolling back"
+       ],
+       "ok": false
+      }
+     },
+     "frames_per_50ms": [
+      6,
+      29,
+      5,
+      0,
+      86,
+      185,
+      184,
+      181,
+      181,
+      184,
+      185,
+      185,
+      184,
+      185,
+      177,
+      184,
+      185,
+      185,
+      184,
+      185,
+      177,
+      184,
+      185,
+      185,
+      184,
+      185,
+      177,
+      184,
+      185,
+      185,
+      184,
+      185,
+      179,
+      182,
+      185,
+      185,
+      184,
+      185,
+      184,
+      177,
+      185,
+      185,
+      184,
+      185,
+      184,
+      168,
+      0,
+      13,
+      0,
+      1,
+      0,
+      0,
+      0,
+      2,
+      3,
+      2,
+      9,
+      12,
+      0,
+      1,
+      0,
+      0,
+      0,
+      2,
+      3,
+      2,
+      9,
+      10,
+      6,
+      4,
+      6,
+      4,
+      6,
+      4,
+      6,
+      4,
+      6
+     ],
+     "faults": "none"
+    },
+    "baseline": {
+     "record": {
+      "scenario": "flash-dev-bad_build-01",
+      "family": "bad_build",
+      "flasher": "baseline",
+      "ecu": "BMS",
+      "expect": "rolled_back",
+      "passed": false,
+      "checks": {
+       "outcome": false,
+       "no_brick": true,
+       "truthful_report": false,
+       "no_stray_dtcs": false,
+       "vehicle_restored": false
+      },
+      "details": {
+       "outcome": "reported failed, expected rolled_back: RoutineControl: conditionsNotCorrect (0x22)",
+       "truthful_report": "reported failed; vehicle runs 4.0.6 (uncommitted trial), previous was 1.8.2",
+       "no_stray_dtcs": "THERMAL:U0100-00",
+       "vehicle_restored": "not restored: BMS",
+       "faults_fired": "none"
+      },
+      "result": {
+       "ecu": "BMS",
+       "flasher": "baseline",
+       "target_version": "4.0.6",
+       "previous_version": "1.8.2",
+       "outcome": "failed",
+       "failed_step": "commit",
+       "reason": "RoutineControl: conditionsNotCorrect (0x22)",
+       "running_version": "4.0.6",
+       "boot_state": 1,
+       "attempts": 1,
+       "blocks_sent": 48,
+       "block_retries": 0,
+       "duration_ms": 2780.9,
+       "steps": [
+        "identify",
+        "programming-session",
+        "security-access",
+        "erase",
+        "request-download",
+        "transfer",
+        "transfer-exit",
+        "check-memory",
+        "activate",
+        "reset",
+        "commit"
+       ],
+       "step_times_ms": [
+        50.0,
+        53.5,
+        58.6,
+        64.9,
+        187.4,
+        190.5,
+        2284.4,
+        2344.5,
+        2367.8,
+        2370.3,
+        2825.8
+       ],
+       "events": [],
+       "ok": false
+      }
+     },
+     "frames_per_50ms": [
+      6,
+      21,
+      3,
+      42,
+      185,
+      184,
+      186,
+      185,
+      184,
+      177,
+      185,
+      184,
+      185,
+      185,
+      184,
+      182,
+      181,
+      184,
+      185,
+      185,
+      184,
+      185,
+      179,
+      182,
+      185,
+      186,
+      184,
+      185,
+      184,
+      177,
+      185,
+      185,
+      184,
+      185,
+      184,
+      186,
+      177,
+      185,
+      184,
+      185,
+      184,
+      185,
+      185,
+      177,
+      185,
+      128,
+      11,
+      7,
+      3,
+      3,
+      3,
+      2,
+      3,
+      4,
+      6,
+      4,
+      20,
+      4,
+      6,
+      4,
+      6,
+      4,
+      6,
+      4,
+      6,
+      4
+     ],
+     "faults": "none"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "flash": {
+  "ZCU_FRONT": {
+   "image_kib": 160,
+   "bus": "zone-front",
+   "fd": true,
+   "simulated_ms": 2151.7,
+   "wall_ms": 39.2,
+   "throughput_kib_s": 74.4,
+   "frames": 2889
+  },
+  "ZCU_REAR": {
+   "image_kib": 128,
+   "bus": "zone-rear",
+   "fd": true,
+   "simulated_ms": 1834.5,
+   "wall_ms": 32.5,
+   "throughput_kib_s": 69.8,
+   "frames": 2323
+  },
+  "BMS": {
+   "image_kib": 48,
+   "bus": "powertrain",
+   "fd": false,
+   "simulated_ms": 2838.7,
+   "wall_ms": 89.4,
+   "throughput_kib_s": 16.9,
+   "frames": 7681
+  },
+  "THERMAL": {
+   "image_kib": 32,
+   "bus": "powertrain",
+   "fd": false,
+   "simulated_ms": 2083.7,
+   "wall_ms": 54.9,
+   "throughput_kib_s": 15.4,
+   "frames": 5152
+  }
+ },
+ "fleet": {
+  "vehicle_days": 360000,
+  "seconds": 2.08,
+  "vehicle_days_per_s": 173233
+ },
+ "python": "3.13.16"
+}

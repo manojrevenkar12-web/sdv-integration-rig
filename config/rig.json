@@ -1,0 +1,51 @@
+{
+  "_comment": "Protocol timings for the simulated vehicle. Values follow the defaults named in ISO 15765-2, ISO 14229-2 and ISO 13400-2.",
+  "isotp": {
+    "ecu_block_size": 16,
+    "ecu_st_min_us": 0,
+    "gateway_block_size": 0,
+    "gateway_st_min_us": 0,
+    "n_bs_ms": 1000,
+    "n_cr_ms": 1000,
+    "wft_max": 4,
+    "padding": "0xCC",
+    "max_message_bytes": 65535
+  },
+  "uds": {
+    "p2_server_ms": 50,
+    "p2_star_server_ms": 5000,
+    "s3_server_ms": 5000,
+    "processing_us": 1500,
+    "pending_interval_ms": 2000,
+    "reset_delay_ms": 20
+  },
+  "doip": {
+    "port": 13400,
+    "protocol_version": 3,
+    "link_latency_us": 250,
+    "max_payload_bytes": 65543,
+    "gateway_wait_ms": 6000
+  },
+  "background": {
+    "status_period_ms": 20,
+    "heartbeat_period_ms": 20,
+    "comm_loss_ms": 200,
+    "monitor_start_delay_ms": 1000
+  },
+  "power": {
+    "supply_mv": 13800,
+    "min_programming_mv": 12500
+  },
+  "tester": {
+    "p2_client_ms": 250,
+    "p2_star_client_ms": 5500,
+    "fingerprint": "RIG-TESTER-01",
+    "functional_gap_ms": 10
+  },
+  "ecu": {
+    "security_attempts": 3,
+    "security_delay_ms": 10000,
+    "cold_threshold_c": -10,
+    "self_test_dtc": "U3000-49"
+  }
+}
